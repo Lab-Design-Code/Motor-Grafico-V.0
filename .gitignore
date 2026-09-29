@@ -31,6 +31,11 @@ Gráficas Meta 2027/**/*.svg
 !03-Fotografias/**/*.md
 !03-Fotografias/**/.gitkeep
 
+# Base de datos de admisión: la aporta cada institución y no se versiona
+02-Datos/*.xlsx
+02-Datos/*.xls
+02-Datos/*.csv
+
 # Empaquetados y copias de la documentación
 *.zip
 *.7z

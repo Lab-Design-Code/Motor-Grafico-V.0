@@ -43,9 +43,10 @@ repositorio pesa unos pocos MB.
 |---|---|
 | `00-Scripts/`: todo el pipeline en Python | fotografías `.jpg` de `03-Fotografias/` |
 | `01-Plantillas/`: plantillas `.svg` de Post y Story | gráficas `.png`/`.svg` de `Gráficas Meta 2027/` |
-| `02-Datos/`: JSON de escuelas, encuadres, perfiles y el Excel de admisión | vistas previas `.png` y mapas de zonas seguras |
+| `02-Datos/`: JSON de escuelas, encuadres y perfiles | vistas previas `.png` y mapas de zonas seguras |
 | `06-Documentacion/`: el manual `.docx` | `node_modules/`, `__pycache__/`, `.zip` |
 | Briefs y LEEME de cada carpeta | fuentes `.otf` |
+| | la base de datos de admisión (Excel): **la aporta cada institución** |
 | La estructura de carpetas, vacía, con `.gitkeep` | |
 
 ## Puesta en marcha

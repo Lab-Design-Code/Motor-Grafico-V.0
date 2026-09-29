@@ -23,8 +23,10 @@ y resuelve lo que falle antes de seguir. Está pensado para Windows.
 6. Pídele a la persona sus insumos:
    - **Plantillas**: Post 1080×1080 y Story 1080×1920 en `.svg`, a
      `01-Plantillas/`.
-   - **Base de datos** de carreras, presencial u online: se traduce a
-     `02-Datos/escuela-*.json` con el formato descrito en `LEEME.md`.
+   - **Base de datos** de carreras, presencial u online: la aporta cada
+     institución y no viene en el repositorio. Guarda el archivo original en
+     `02-Datos/` (queda fuera de git) y tradúcelo a `02-Datos/escuela-*.json`
+     con el formato descrito en `LEEME.md`.
    - **Fotografías**, de una de dos formas:
      - **Una carpeta propia**: si trae fotos ya expandidas (`_generadas`),
        cópiala a `03-Fotografias/_generadas/`; si son fotos originales, pásalas
