@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# Motor gráfico Meta IPG — sólo código, datos y plantillas.
+#
+# La carpeta local pesa ~5 GB por las fotografías y las gráficas terminadas.
+# Nada de eso entra al repositorio: las fotos se licencian y se expanden por
+# carrera, y las gráficas se regeneran con el motor. Las carpetas se conservan
+# vacías con un .gitkeep para que la estructura quede lista al clonar.
+# ---------------------------------------------------------------------------
+
+# Imágenes y gráficas renderizadas, en cualquier carpeta
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.psd
+*.ai
+*.pdf
+*.mp4
+*.mov
+
+# Salidas del motor: las gráficas terminadas (V.1 también deja .svg por pieza)
+Gráficas Meta 2027/**/*.svg
+
+# Fotografías: sólo se versionan los .md de brief, calce y auditoría
+03-Fotografias/**
+!03-Fotografias/**/
+!03-Fotografias/**/*.md
+!03-Fotografias/**/.gitkeep
+
+# Empaquetados y copias de la documentación
+*.zip
+*.7z
+*.rar
+Motor Gráfico-Meta IPG/
+06-Documentacion/Copia*/
+
+# Dependencias y cachés
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Fuentes: Montserrat se instala en el sistema o se copia en fuentes/
+fuentes/*.otf
+fuentes/*.ttf
+
+# Sistema operativo y editores
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+.vscode/
+.idea/

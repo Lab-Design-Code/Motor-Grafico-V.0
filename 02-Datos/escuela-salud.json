@@ -1,0 +1,462 @@
+{
+  "escuela": "Escuela de Salud",
+  "_notas": [
+    "Fuente: 'Documento Admisión 2027 (1).xlsx', hojas 'OA Presencial' (descuento 0,4) y 'OA Online 27' (descuento 0,5).",
+    "Unidad de réplica: una gráfica por carrera + sede, agrupando jornadas.",
+    "Cuando diurna y vespertina tienen cuota distinta se usa la menor, porque la plantilla dice 'Cuotas desde'.",
+    "Sede deducida del prefijo del código: AR=Arauco, CC=Concepción, LU=La Unión, PG=Panguipulli; online = Sede Online."
+  ],
+  "carreras": [
+    {
+      "carpeta": "Enfermeria",
+      "slug": "Enfermeria-Arauco",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "ENFERMERÍA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 110000,
+      "sede": "Sede Arauco",
+      "_codigo": "AR01001",
+      "foto": "Escuela de Salud/Enfermeria/Enfermeria.jpg",
+      "expandir_lados_post": 2.15,
+      "expandir_arriba_post": 0.315,
+      "expandir_abajo_post": 0.415,
+      "focal_post": [
+        0.4746,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.45,
+      "expandir_arriba_story": 0.24,
+      "expandir_abajo_story": 0.4,
+      "focal_story": [
+        0.4448,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Enfermeria",
+      "slug": "Enfermeria-Concepcion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "ENFERMERÍA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 110000,
+      "sede": "Sede Concepción",
+      "_codigo": "CC01001",
+      "foto": "Escuela de Salud/Enfermeria/Enfermeria.jpg",
+      "expandir_lados_post": 2.15,
+      "expandir_arriba_post": 0.315,
+      "expandir_abajo_post": 0.415,
+      "focal_post": [
+        0.4746,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.45,
+      "expandir_arriba_story": 0.24,
+      "expandir_abajo_story": 0.4,
+      "focal_story": [
+        0.4448,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Enfermeria",
+      "slug": "Enfermeria-LaUnion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "ENFERMERÍA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 110000,
+      "sede": "Sede La Unión",
+      "_codigo": "LU01001",
+      "foto": "Escuela de Salud/Enfermeria/Enfermeria.jpg",
+      "expandir_lados_post": 2.15,
+      "expandir_arriba_post": 0.315,
+      "expandir_abajo_post": 0.415,
+      "focal_post": [
+        0.4746,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.45,
+      "expandir_arriba_story": 0.24,
+      "expandir_abajo_story": 0.4,
+      "focal_story": [
+        0.4448,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Enfermeria",
+      "slug": "Enfermeria-Panguipulli",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "ENFERMERÍA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 115000,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG01001",
+      "foto": "Escuela de Salud/Enfermeria/Enfermeria.jpg",
+      "expandir_lados_post": 2.15,
+      "expandir_arriba_post": 0.315,
+      "expandir_abajo_post": 0.415,
+      "focal_post": [
+        0.4746,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.45,
+      "expandir_arriba_story": 0.24,
+      "expandir_abajo_story": 0.4,
+      "focal_story": [
+        0.4448,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Estetica-Integral",
+      "slug": "Estetica-Integral-Arauco",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "ESTÉTICA INTEGRAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Arauco",
+      "_codigo": "AR01005",
+      "foto": "Escuela de Salud/Estetica-Integral/Estetica-Integral.jpg",
+      "_shutterstock": 2656938389,
+      "expandir_lados_post": 0.45,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.04,
+      "focal_post": [
+        0.3724,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.14,
+      "expandir_abajo_story": 0.02,
+      "focal_story": [
+        0.315,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Estetica-Integral",
+      "slug": "Estetica-Integral-Concepcion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "ESTÉTICA INTEGRAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC01005",
+      "foto": "Escuela de Salud/Estetica-Integral/Estetica-Integral.jpg",
+      "_shutterstock": 2656938389,
+      "expandir_lados_post": 0.45,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.04,
+      "focal_post": [
+        0.3724,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.14,
+      "expandir_abajo_story": 0.02,
+      "focal_story": [
+        0.315,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Estetica-Integral",
+      "slug": "Estetica-Integral-Panguipulli",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "ESTÉTICA INTEGRAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG01015",
+      "foto": "Escuela de Salud/Estetica-Integral/Estetica-Integral.jpg",
+      "_shutterstock": 2656938389,
+      "expandir_lados_post": 0.45,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.04,
+      "focal_post": [
+        0.3724,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.14,
+      "expandir_abajo_story": 0.02,
+      "focal_story": [
+        0.315,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Podologia",
+      "slug": "Podologia-Arauco",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "PODOLOGÍA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Arauco",
+      "_codigo": "AR01013",
+      "foto": "Escuela de Salud/Podologia/Podologia.jpg",
+      "_shutterstock": 2779153619,
+      "_nota_story": "Foto 3:2 en lienzo 9:16: expansion vertical alta para que el cover no recorte de lado.",
+      "expandir_lados_post": 0.3,
+      "expandir_abajo_post": 0.58,
+      "focal_post": [
+        0.4692,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.22,
+      "expandir_abajo_story": 1.18,
+      "focal_story": [
+        0.46,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Podologia",
+      "slug": "Podologia-Concepcion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "PODOLOGÍA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC01013",
+      "foto": "Escuela de Salud/Podologia/Podologia.jpg",
+      "_shutterstock": 2779153619,
+      "_nota_story": "Foto 3:2 en lienzo 9:16: expansion vertical alta para que el cover no recorte de lado.",
+      "expandir_lados_post": 0.3,
+      "expandir_abajo_post": 0.58,
+      "focal_post": [
+        0.4692,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.22,
+      "expandir_abajo_story": 1.18,
+      "focal_story": [
+        0.46,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Podologia",
+      "slug": "Podologia-LaUnion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "PODOLOGÍA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede La Unión",
+      "_codigo": "LU01013",
+      "foto": "Escuela de Salud/Podologia/Podologia.jpg",
+      "_shutterstock": 2779153619,
+      "_nota_story": "Foto 3:2 en lienzo 9:16: expansion vertical alta para que el cover no recorte de lado.",
+      "expandir_lados_post": 0.3,
+      "expandir_abajo_post": 0.58,
+      "focal_post": [
+        0.4692,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.22,
+      "expandir_abajo_story": 1.18,
+      "focal_story": [
+        0.46,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Podologia",
+      "slug": "Podologia-Panguipulli",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "PODOLOGÍA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG01013",
+      "foto": "Escuela de Salud/Podologia/Podologia.jpg",
+      "_shutterstock": 2779153619,
+      "_nota_story": "Foto 3:2 en lienzo 9:16: expansion vertical alta para que el cover no recorte de lado.",
+      "expandir_lados_post": 0.3,
+      "expandir_abajo_post": 0.58,
+      "focal_post": [
+        0.4692,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.22,
+      "expandir_abajo_story": 1.18,
+      "focal_story": [
+        0.46,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Administracion-de-Centros-de-Salud",
+      "slug": "Administracion-Centros-de-Salud-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "ADMINISTRACIÓN DE CENTROS DE SALUD",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "NUEVA",
+      "foto": "Escuela de Salud/Administracion-de-Centros-de-Salud/Administracion-de-Centros-de-Salud.jpg",
+      "_shutterstock": 606365378,
+      "_nota_encuadre": "Titulo de dos lineas: el generador sube el bloque una interlinea (~73 px en Post, ~85 en Story), asi que el menton tiene que quedar mas alto que en las carreras de titulo corto.",
+      "expandir_lados_post": 0.15,
+      "expandir_arriba_post": 0.105,
+      "expandir_abajo_post": 0.805,
+      "focal_post": [
+        0.5609,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.26,
+      "expandir_abajo_story": 1.5,
+      "focal_story": [
+        0.57,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Rehabilitacion-de-Dependencia-de-Drogas",
+      "slug": "Rehabilitacion-Dependencia-de-Drogas-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "REHABILITACIÓN DE DEPENDENCIA DE DROGAS",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "CV01013ONL",
+      "foto": "Escuela de Salud/Rehabilitacion-de-Dependencia-de-Drogas/Rehabilitacion-de-Dependencia-de-Drogas.jpg",
+      "_shutterstock": 2641840031,
+      "_nota_encuadre": "Titulo de dos lineas: ver nota de Administracion de Centros de Salud.",
+      "_nota_story": "Expansion vertical alta a proposito: la foto es 3:2 y el Story 9:16. Sin ella el cover recorta 778 px de ancho y corta a las personas de los extremos.",
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.29,
+      "expandir_abajo_post": 0.545,
+      "focal_post": [
+        0.484,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.46,
+      "expandir_abajo_story": 1.3,
+      "focal_story": [
+        0.48,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Farmacias",
+      "slug": "Farmacias-Online",
+      "prefijo": "Técnico en",
+      "nombre": "FARMACIAS",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "NUEVA",
+      "foto": "Escuela de Salud/Farmacias/Farmacias.jpg",
+      "_shutterstock": 2317132663,
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.11,
+      "expandir_abajo_post": 0.115,
+      "focal_post": [
+        0.724,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.2,
+      "expandir_abajo_story": 0.48,
+      "focal_story": [
+        0.78,
+        0,
+        0.6759,
+        0
+      ]
+    }
+  ]
+}

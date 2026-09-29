@@ -1,0 +1,620 @@
+{
+  "escuela": "Escuela de Gestion, Negocios y Maritima",
+  "_notas": [
+    "Fuente: 'Documento Admisión 2027 (1).xlsx', hojas 'OA Presencial' (descuento 0,4) y 'OA Online 27' (descuento 0,5).",
+    "Las filas con código 'NUEVA EN SEDE' no traen prefijo de sede: se asignan por el bloque del Excel donde están (Administración de Empresas PC y Contabilidad General en La Unión, Contador Auditor PC en Panguipulli).",
+    "Redondeo de cuota a la decena: 82.916,67 -> 82.920 y 70.833,33 -> 70.830.",
+    "Los niveles de una misma disciplina se agrupan en una gráfica con badges (RN-14), como el arte original de Gestión Logística: Técnico, Profesional y Plan Continuidad conviven bajo el prefijo del nivel superior."
+  ],
+  "_supuestos_a_confirmar": [
+    "Prefijo de Contador Auditor y Administración Pública: 'Carrera Profesional de', igual que Psicopedagogía, porque no son Técnico de Nivel Superior y la plantilla exige prefijo.",
+    "'TNS en Comercio Exterior mención Comercio Electrónico' se publica como 'COMERCIO EXTERIOR': la mención no cabe ni en el título ni en la pastilla de badge."
+  ],
+  "carreras": [
+    {
+      "carpeta": "Administracion-de-Empresas",
+      "slug": "Administracion-de-Empresas-Arauco",
+      "prefijo": "Ingeniería en",
+      "nombre": "ADMINISTRACIÓN DE EMPRESAS",
+      "badges": [
+        "Título Profesional"
+      ],
+      "beca": 40,
+      "cuota": 84500,
+      "sede": "Sede Arauco",
+      "_codigo": "AR06049",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Empresas/Administracion-de-Empresas.jpg",
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.46,
+      "focal_post": [
+        0.364,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.3,
+      "expandir_arriba_story": 0.82,
+      "expandir_abajo_story": 1.86,
+      "focal_story": [
+        0.3692,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Administracion-de-Empresas",
+      "slug": "Administracion-de-Empresas-Concepcion",
+      "prefijo": "Ingeniería en",
+      "nombre": "ADMINISTRACIÓN DE EMPRESAS",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 40,
+      "cuota": 84500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC06049 + CC06045",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Empresas/Administracion-de-Empresas.jpg",
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.46,
+      "focal_post": [
+        0.364,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.3,
+      "expandir_arriba_story": 0.82,
+      "expandir_abajo_story": 1.86,
+      "focal_story": [
+        0.3692,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Administracion-de-Empresas",
+      "slug": "Administracion-de-Empresas-LaUnion",
+      "prefijo": "Ingeniería en",
+      "nombre": "ADMINISTRACIÓN DE EMPRESAS",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 40,
+      "cuota": 84500,
+      "sede": "Sede La Unión",
+      "_codigo": "LU06049 + NUEVA EN SEDE",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Empresas/Administracion-de-Empresas.jpg",
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.46,
+      "focal_post": [
+        0.364,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.3,
+      "expandir_arriba_story": 0.82,
+      "expandir_abajo_story": 1.86,
+      "focal_story": [
+        0.3692,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Administracion-de-Empresas",
+      "slug": "Administracion-de-Empresas-Panguipulli",
+      "prefijo": "Ingeniería en",
+      "nombre": "ADMINISTRACIÓN DE EMPRESAS",
+      "badges": [
+        "Título Profesional"
+      ],
+      "beca": 40,
+      "cuota": 84500,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG06045",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Empresas/Administracion-de-Empresas.jpg",
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.46,
+      "focal_post": [
+        0.364,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.3,
+      "expandir_arriba_story": 0.82,
+      "expandir_abajo_story": 1.86,
+      "focal_story": [
+        0.3692,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Administracion-de-Empresas",
+      "slug": "Administracion-de-Empresas-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "ADMINISTRACIÓN DE EMPRESAS",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV06046 + CV06049 + CV06045",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Empresas/Administracion-de-Empresas.jpg",
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.46,
+      "focal_post": [
+        0.364,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.3,
+      "expandir_arriba_story": 0.82,
+      "expandir_abajo_story": 1.86,
+      "focal_story": [
+        0.3692,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Maquinaria-Naval",
+      "slug": "Maquinaria-Naval-Concepcion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "MAQUINARIA NAVAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 119500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC08011",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Maquinaria-Naval/Maquinaria-Naval.jpg",
+      "expandir_lados_post": 0.2,
+      "expandir_abajo_post": 0.22,
+      "focal_post": [
+        0.4625,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.12,
+      "expandir_abajo_story": 1.38,
+      "focal_story": [
+        0.455,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Transporte-Maritimo",
+      "slug": "Transporte-Maritimo-Concepcion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "TRANSPORTE MARÍTIMO",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 119500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC08010",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Transporte-Maritimo/Transporte-Maritimo.jpg",
+      "expandir_lados_post": 0.7,
+      "expandir_arriba_post": 0.1,
+      "expandir_abajo_post": 0.32,
+      "focal_post": [
+        0.3764,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.45,
+      "expandir_arriba_story": 0.56,
+      "expandir_abajo_story": 1.1,
+      "focal_story": [
+        0.3551,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Contabilidad-General",
+      "slug": "Contabilidad-General-LaUnion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "CONTABILIDAD GENERAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 100000,
+      "sede": "Sede La Unión",
+      "_codigo": "NUEVA EN SEDE",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Contabilidad-General/Contabilidad-General.jpg",
+      "expandir_lados_post": 0.4,
+      "expandir_arriba_post": 0.12,
+      "expandir_abajo_post": 0.22,
+      "focal_post": [
+        0.4357,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.05,
+      "expandir_arriba_story": 0.3,
+      "expandir_abajo_story": 1.1,
+      "focal_story": [
+        0.4143,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Contabilidad-General",
+      "slug": "Contabilidad-General-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "CONTABILIDAD GENERAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "CV06003ONL",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Contabilidad-General/Contabilidad-General.jpg",
+      "expandir_lados_post": 0.4,
+      "expandir_arriba_post": 0.12,
+      "expandir_abajo_post": 0.22,
+      "focal_post": [
+        0.4357,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.05,
+      "expandir_arriba_story": 0.3,
+      "expandir_abajo_story": 1.1,
+      "focal_story": [
+        0.4143,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Contador-Auditor",
+      "slug": "Contador-Auditor-Panguipulli",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "CONTADOR AUDITOR",
+      "badges": [
+        "Plan Continuidad"
+      ],
+      "beca": 40,
+      "cuota": 100000,
+      "sede": "Sede Panguipulli",
+      "_codigo": "NUEVA EN SEDE",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Contador-Auditor/Contador-Auditor.jpg",
+      "expandir_lados_post": 0.55,
+      "expandir_arriba_post": 0.24,
+      "expandir_abajo_post": 0.44,
+      "focal_post": [
+        0.5194,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.48,
+      "expandir_abajo_story": 0.8,
+      "focal_story": [
+        0.53,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Contador-Auditor",
+      "slug": "Contador-Auditor-Online",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "CONTADOR AUDITOR",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV06055ONL + CV06065ONL",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Contador-Auditor/Contador-Auditor.jpg",
+      "expandir_lados_post": 0.55,
+      "expandir_arriba_post": 0.24,
+      "expandir_abajo_post": 0.44,
+      "focal_post": [
+        0.5194,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.48,
+      "expandir_abajo_story": 0.8,
+      "focal_story": [
+        0.53,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Administracion-Publica",
+      "slug": "Administracion-Publica-Online",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "ADMINISTRACIÓN PÚBLICA",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "CV06038 + CV06051 + CV06062",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-Publica/Administracion-Publica.jpg",
+      "expandir_lados_post": 0.65,
+      "expandir_arriba_post": 0.34,
+      "expandir_abajo_post": 0.38,
+      "focal_post": [
+        0.5061,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.42,
+      "expandir_abajo_story": 0.88,
+      "focal_story": [
+        0.51,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Administracion-de-Recursos-Humanos",
+      "slug": "Administracion-de-Recursos-Humanos-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "ADMINISTRACIÓN DE RECURSOS HUMANOS",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV06048ONL",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Recursos-Humanos/Administracion-de-Recursos-Humanos.jpg",
+      "expandir_lados_post": 0.6,
+      "expandir_arriba_post": 0.36,
+      "expandir_abajo_post": 0.8,
+      "focal_post": [
+        0.5813,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.36,
+      "expandir_abajo_story": 0.96,
+      "focal_story": [
+        0.63,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Gestion-Logistica",
+      "slug": "Gestion-Logistica-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "GESTIÓN LOGÍSTICA",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV06023 + CV06044 + CV06043",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Gestion-Logistica/Gestion-Logistica.jpg",
+      "expandir_lados_post": 0.45,
+      "expandir_arriba_post": 0.2,
+      "expandir_abajo_post": 0.22,
+      "focal_post": [
+        0.4586,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.36,
+      "expandir_abajo_story": 0.96,
+      "focal_story": [
+        0.44,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Gestion-Logistica-Portuaria",
+      "slug": "Gestion-Logistica-Portuaria-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "GESTIÓN LOGÍSTICA PORTUARIA",
+      "badges": [
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "NUEVA",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Gestion-Logistica-Portuaria/Gestion-Logistica-Portuaria.jpg",
+      "expandir_lados_post": 0.35,
+      "expandir_abajo_post": 0.26,
+      "focal_post": [
+        0.4259,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.05,
+      "expandir_arriba_story": 0.3,
+      "expandir_abajo_story": 1.1,
+      "focal_story": [
+        0.4047,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Marketing-Digital",
+      "slug": "Marketing-Digital-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "MARKETING DIGITAL",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 70830,
+      "sede": "Sede Online",
+      "_codigo": "CV06037 + CV06069 + CV06070",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Marketing-Digital/Marketing-Digital.jpg",
+      "expandir_arriba_post": 0.32,
+      "expandir_abajo_post": 0.5,
+      "focal_post": [
+        0.755,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.72,
+      "expandir_abajo_story": 1.24,
+      "focal_story": [
+        0.755,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Comercio-Exterior",
+      "slug": "Comercio-Exterior-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "COMERCIO EXTERIOR",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 78750,
+      "sede": "Sede Online",
+      "_codigo": "CV06042ONL",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Comercio-Exterior/Comercio-Exterior.jpg",
+      "expandir_lados_post": 0.5,
+      "expandir_arriba_post": 0.34,
+      "expandir_abajo_post": 0.48,
+      "focal_post": [
+        0.5867,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.48,
+      "expandir_abajo_story": 0.8,
+      "focal_story": [
+        0.63,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Gestion-Comercial-y-Ventas",
+      "slug": "Gestion-Comercial-y-Ventas-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "GESTIÓN COMERCIAL Y VENTAS",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "NUEVA",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Gestion-Comercial-y-Ventas/Gestion-Comercial-y-Ventas.jpg",
+      "expandir_lados_post": 0.2,
+      "expandir_arriba_post": 0.06,
+      "expandir_abajo_post": 0.1,
+      "focal_post": [
+        0.4292,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.26,
+      "expandir_abajo_story": 1.12,
+      "focal_story": [
+        0.415,
+        0,
+        0.6759,
+        0
+      ]
+    },
+    {
+      "carpeta": "Operaciones-Portuarias",
+      "slug": "Operaciones-Portuarias-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "OPERACIONES PORTUARIAS",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV08013ONL",
+      "foto": "Escuela de Gestion, Negocios y Maritima/Operaciones-Portuarias/Operaciones-Portuarias.jpg",
+      "expandir_arriba_post": 0.08,
+      "expandir_abajo_post": 0.14,
+      "focal_post": [
+        0.72,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.36,
+      "expandir_abajo_story": 0.96,
+      "focal_story": [
+        0.72,
+        0,
+        0.6759,
+        0
+      ]
+    }
+  ]
+}

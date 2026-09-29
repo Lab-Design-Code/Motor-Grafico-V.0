@@ -1,0 +1,249 @@
+{
+  "Administracion-de-Empresas": {
+    "expandir_lados_post": 0.25,
+    "expandir_arriba_post": 0.18,
+    "expandir_abajo_post": 0.46,
+    "focal_post": [
+      0.364,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.3,
+    "expandir_arriba_story": 0.82,
+    "expandir_abajo_story": 1.86,
+    "focal_story": [
+      0.3692,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Contabilidad-General": {
+    "expandir_lados_post": 0.4,
+    "expandir_arriba_post": 0.12,
+    "expandir_abajo_post": 0.22,
+    "focal_post": [
+      0.4357,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.05,
+    "expandir_arriba_story": 0.3,
+    "expandir_abajo_story": 1.1,
+    "focal_story": [
+      0.4143,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Contador-Auditor": {
+    "expandir_lados_post": 0.55,
+    "expandir_arriba_post": 0.24,
+    "expandir_abajo_post": 0.44,
+    "focal_post": [
+      0.5194,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.48,
+    "expandir_abajo_story": 0.8,
+    "focal_story": [
+      0.53,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Administracion-Publica": {
+    "expandir_lados_post": 0.65,
+    "expandir_arriba_post": 0.34,
+    "expandir_abajo_post": 0.38,
+    "focal_post": [
+      0.5061,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.42,
+    "expandir_abajo_story": 0.88,
+    "focal_story": [
+      0.51,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Administracion-de-Recursos-Humanos": {
+    "expandir_lados_post": 0.6,
+    "expandir_arriba_post": 0.36,
+    "expandir_abajo_post": 0.8,
+    "focal_post": [
+      0.5813,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.36,
+    "expandir_abajo_story": 0.96,
+    "focal_story": [
+      0.63,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Gestion-Logistica": {
+    "expandir_lados_post": 0.45,
+    "expandir_arriba_post": 0.2,
+    "expandir_abajo_post": 0.22,
+    "focal_post": [
+      0.4586,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.36,
+    "expandir_abajo_story": 0.96,
+    "focal_story": [
+      0.44,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Gestion-Logistica-Portuaria": {
+    "expandir_lados_post": 0.35,
+    "expandir_abajo_post": 0.26,
+    "focal_post": [
+      0.4259,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.05,
+    "expandir_arriba_story": 0.3,
+    "expandir_abajo_story": 1.1,
+    "focal_story": [
+      0.4047,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Operaciones-Portuarias": {
+    "expandir_arriba_post": 0.08,
+    "expandir_abajo_post": 0.14,
+    "focal_post": [
+      0.72,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.36,
+    "expandir_abajo_story": 0.96,
+    "focal_story": [
+      0.72,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Marketing-Digital": {
+    "expandir_arriba_post": 0.32,
+    "expandir_abajo_post": 0.5,
+    "focal_post": [
+      0.755,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.72,
+    "expandir_abajo_story": 1.24,
+    "focal_story": [
+      0.755,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Comercio-Exterior": {
+    "expandir_lados_post": 0.5,
+    "expandir_arriba_post": 0.34,
+    "expandir_abajo_post": 0.48,
+    "focal_post": [
+      0.5867,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.48,
+    "expandir_abajo_story": 0.8,
+    "focal_story": [
+      0.63,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Gestion-Comercial-y-Ventas": {
+    "expandir_lados_post": 0.2,
+    "expandir_arriba_post": 0.06,
+    "expandir_abajo_post": 0.1,
+    "focal_post": [
+      0.4292,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.26,
+    "expandir_abajo_story": 1.12,
+    "focal_story": [
+      0.415,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Maquinaria-Naval": {
+    "expandir_lados_post": 0.2,
+    "expandir_abajo_post": 0.22,
+    "focal_post": [
+      0.4625,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.12,
+    "expandir_abajo_story": 1.38,
+    "focal_story": [
+      0.455,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Transporte-Maritimo": {
+    "expandir_lados_post": 0.7,
+    "expandir_arriba_post": 0.1,
+    "expandir_abajo_post": 0.32,
+    "focal_post": [
+      0.3764,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.45,
+    "expandir_arriba_story": 0.56,
+    "expandir_abajo_story": 1.1,
+    "focal_story": [
+      0.3551,
+      0,
+      0.6759,
+      0
+    ]
+  }
+}

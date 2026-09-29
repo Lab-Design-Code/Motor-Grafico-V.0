@@ -1,0 +1,183 @@
+{
+  "_como_se_miden": [
+    "Todas las medidas son fracciones de la foto ORIGINAL, no del lienzo.",
+    "pelo: tope del pelo o del casco -- es lo que no puede entrar en la zona del logo.",
+    "menton: punta del menton. cara_x: centro horizontal de la cabeza.",
+    "Se leen con 00-Scripts/grilla_fina.py sobre un recorte ampliado (RN-25).",
+    "Cuando hay mas de un sujeto se elige uno, no el punto medio (RN-22).",
+    "titulo_post / titulo_story los escribe 00-Scripts/medir_titulo.py."
+  ],
+  "Construccion-Civil": {
+    "ancho": 5472,
+    "alto": 3648,
+    "pelo": 0.155,
+    "menton": 0.395,
+    "cara_x": 0.41,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Ingenieria-Industrial": {
+    "ancho": 7008,
+    "alto": 4672,
+    "pelo": 0.07,
+    "menton": 0.32,
+    "cara_x": 0.52,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Electricidad": {
+    "ancho": 8192,
+    "alto": 5464,
+    "pelo": 0.042,
+    "menton": 0.442,
+    "cara_x": 0.68,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Prevencion-de-Riesgos": {
+    "ancho": 7952,
+    "alto": 5304,
+    "pelo": 0.233,
+    "menton": 0.483,
+    "cara_x": 0.34,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Automatizacion-y-Control-Industrial": {
+    "ancho": 4436,
+    "alto": 2957,
+    "pelo": 0.05,
+    "menton": 0.275,
+    "cara_x": 0.22,
+    "titulo_post": 359,
+    "titulo_story": 615
+  },
+  "Ciberseguridad": {
+    "ancho": 6000,
+    "alto": 4002,
+    "pelo": 0.092,
+    "menton": 0.325,
+    "cara_x": 0.7,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "_nota_ciencia_de_datos": [
+    "La foto trae dos profesionales. El sujeto es la de la derecha, que mira al",
+    "monitor con la otra detras; encuadrar el punto medio partiria a una (RN-22)."
+  ],
+  "Ciencia-de-Datos": {
+    "ancho": 6938,
+    "alto": 4626,
+    "pelo": 0.05,
+    "menton": 0.367,
+    "cara_x": 0.615,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Gestion-de-Seguridad-y-Vigilancia-Privada": {
+    "ancho": 7376,
+    "alto": 4922,
+    "pelo": 0.25,
+    "menton": 0.408,
+    "cara_x": 0.345,
+    "titulo_post": 359,
+    "titulo_story": 621
+  },
+  "Informatica": {
+    "ancho": 8192,
+    "alto": 4320,
+    "pelo": 0.131,
+    "menton": 0.333,
+    "cara_x": 0.585,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Informatica-y-Ciberseguridad": {
+    "ancho": 6000,
+    "alto": 4002,
+    "pelo": 0.042,
+    "menton": 0.325,
+    "cara_x": 0.375,
+    "titulo_post": 359,
+    "titulo_story": 615
+  },
+  "Inteligencia-Artificial": {
+    "ancho": 8192,
+    "alto": 4320,
+    "pelo": 0.264,
+    "menton": 0.432,
+    "cara_x": 0.8,
+    "titulo_post": 359,
+    "titulo_story": 615
+  },
+  "Mantenimiento-Industrial": {
+    "ancho": 7680,
+    "alto": 4050,
+    "pelo": 0.169,
+    "menton": 0.369,
+    "cara_x": 0.19,
+    "titulo_post": 433,
+    "titulo_story": 615
+  },
+  "Minas": {
+    "ancho": 7008,
+    "alto": 4672,
+    "pelo": 0.063,
+    "menton": 0.433,
+    "cara_x": 0.46,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Operaciones-de-Planta-Minera": {
+    "ancho": 7008,
+    "alto": 4672,
+    "pelo": 0.063,
+    "menton": 0.433,
+    "cara_x": 0.46,
+    "titulo_post": 359,
+    "titulo_story": 615
+  },
+  "Instrumentacion-Industrial": {
+    "ancho": 7680,
+    "alto": 4050,
+    "pelo": 0.236,
+    "menton": 0.39,
+    "cara_x": 0.415,
+    "titulo_post": 433,
+    "titulo_story": 615
+  },
+  "Procesos-Industriales": {
+    "ancho": 7680,
+    "alto": 4320,
+    "pelo": 0.154,
+    "menton": 0.326,
+    "cara_x": 0.575,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Procesos-Mineros": {
+    "ancho": 4988,
+    "alto": 3326,
+    "pelo": 0.042,
+    "menton": 0.375,
+    "cara_x": 0.49,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Programacion": {
+    "ancho": 4565,
+    "alto": 6847,
+    "pelo": 0.285,
+    "menton": 0.485,
+    "cara_x": 0.51,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "_nota_reemplazos": [
+    "Construccion-Civil, Gestion de Seguridad, Programacion e Inteligencia Artificial",
+    "se reemplazaron: las primeras elegidas eran primeros planos y el solver no",
+    "encontraba solucion. Regla practica: el rostro no puede pasar de ~0,30 del alto",
+    "de la foto, porque en el Post la ventana vertical es de 190 px sobre 1080.",
+    "Inteligencia Artificial trae tres personas; el sujeto es el del centro (RN-22)."
+  ]
+}

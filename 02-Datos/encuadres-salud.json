@@ -1,0 +1,108 @@
+{
+  "Enfermeria": {
+    "expandir_lados_post": 1.85,
+    "expandir_arriba_post": 0.16,
+    "expandir_abajo_post": 0.22,
+    "focal_post": [
+      0.4965,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.3,
+    "expandir_arriba_story": 0.08,
+    "expandir_abajo_story": 0.14,
+    "focal_story": [
+      0.4923,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Estetica-Integral": {
+    "expandir_lados_post": 0.45,
+    "expandir_arriba_post": 0.18,
+    "expandir_abajo_post": 0.04,
+    "focal_post": [
+      0.3724,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.14,
+    "expandir_abajo_story": 0.02,
+    "focal_story": [
+      0.315,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Podologia": {
+    "expandir_lados_post": 0.45,
+    "expandir_arriba_post": 0.34,
+    "expandir_abajo_post": 0.38,
+    "focal_post": [
+      0.4793,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.26,
+    "expandir_abajo_story": 0.36,
+    "focal_story": [
+      0.47,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Administracion-de-Centros-de-Salud": {
+    "expandir_lados_post": 0.75,
+    "expandir_arriba_post": 0.68,
+    "expandir_abajo_post": 0.72,
+    "focal_post": [
+      0.5714,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.24,
+    "expandir_abajo_story": 0.64,
+    "focal_story": [
+      0.625,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Rehabilitacion-de-Dependencia-de-Drogas": {
+    "expandir_arriba_story": 0.24,
+    "expandir_abajo_story": 0.64,
+    "focal_story": [
+      0.57,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Farmacias": {
+    "expandir_lados_post": 0.3,
+    "expandir_arriba_post": 0.2,
+    "expandir_abajo_post": 0.38,
+    "focal_post": [
+      0.5692,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.12,
+    "expandir_abajo_story": 0.34,
+    "focal_story": [
+      0.59,
+      0,
+      0.6759,
+      0
+    ]
+  }
+}

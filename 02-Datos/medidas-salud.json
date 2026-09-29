@@ -1,0 +1,72 @@
+{
+  "_como_se_miden": [
+    "Todas las medidas son fracciones de la foto ORIGINAL, no del lienzo.",
+    "pelo: tope del pelo. menton: punta del menton. cara_x: centro horizontal de la cabeza.",
+    "Se leen con 00-Scripts/grilla_fina.py, que dibuja centesimas sobre un recorte ampliado.",
+    "No sirve estimarlas sobre una miniatura: un error de 0.05 del alto son ~50 px en el lienzo,",
+    "suficiente para que el menton termine bajo el titulo.",
+    "Cuando hay dos sujetos se elige uno, no el punto medio (RN-22).",
+    "titulo_post / titulo_story: Y real donde empieza el titulo en el lienzo.",
+    "Los escribe 00-Scripts/medir_titulo.py; no se estiman a ojo."
+  ],
+  "Enfermeria": {
+    "ancho": 5304,
+    "alto": 7952,
+    "pelo": 0.115,
+    "menton": 0.31,
+    "cara_x": 0.49,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Estetica-Integral": {
+    "ancho": 7352,
+    "alto": 4904,
+    "pelo": 0.055,
+    "menton": 0.225,
+    "cara_x": 0.315,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "_nota_podologia": [
+    "La foto trae dos profesionales. Encuadrar el punto medio de ambas deja a una",
+    "centrada en la silueta y a la otra partida contra el borde derecho, que se lee",
+    "como error. Se toma la de la izquierda como sujeto unico: entra completa en la",
+    "silueta y la segunda queda fuera de cuadro."
+  ],
+  "Podologia": {
+    "ancho": 8192,
+    "alto": 5464,
+    "pelo": 0.045,
+    "menton": 0.395,
+    "cara_x": 0.53,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Administracion-de-Centros-de-Salud": {
+    "ancho": 5936,
+    "alto": 3958,
+    "pelo": 0.085,
+    "menton": 0.335,
+    "cara_x": 0.625,
+    "titulo_post": 359,
+    "titulo_story": 615
+  },
+  "Rehabilitacion-de-Dependencia-de-Drogas": {
+    "ancho": 5472,
+    "alto": 3648,
+    "pelo": 0.105,
+    "menton": 0.31,
+    "cara_x": 0.59,
+    "titulo_post": 359,
+    "titulo_story": 628
+  },
+  "Farmacias": {
+    "ancho": 5472,
+    "alto": 3648,
+    "pelo": 0.115,
+    "menton": 0.355,
+    "cara_x": 0.59,
+    "titulo_post": 433,
+    "titulo_story": 700
+  }
+}

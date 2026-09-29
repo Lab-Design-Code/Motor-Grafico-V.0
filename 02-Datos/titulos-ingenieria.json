@@ -1,0 +1,74 @@
+{
+  "Construccion-Civil": {
+    "post": 433,
+    "story": 700
+  },
+  "Ingenieria-Industrial": {
+    "post": 433,
+    "story": 700
+  },
+  "Electricidad": {
+    "post": 433,
+    "story": 700
+  },
+  "Prevencion-de-Riesgos": {
+    "post": 433,
+    "story": 700
+  },
+  "Automatizacion-y-Control-Industrial": {
+    "post": 359,
+    "story": 615
+  },
+  "Ciberseguridad": {
+    "post": 433,
+    "story": 700
+  },
+  "Ciencia-de-Datos": {
+    "post": 433,
+    "story": 700
+  },
+  "Gestion-de-Seguridad-y-Vigilancia-Privada": {
+    "post": 359,
+    "story": 621
+  },
+  "Informatica": {
+    "post": 433,
+    "story": 700
+  },
+  "Informatica-y-Ciberseguridad": {
+    "post": 359,
+    "story": 615
+  },
+  "Inteligencia-Artificial": {
+    "post": 359,
+    "story": 615
+  },
+  "Mantenimiento-Industrial": {
+    "post": 433,
+    "story": 615
+  },
+  "Minas": {
+    "post": 433,
+    "story": 700
+  },
+  "Operaciones-de-Planta-Minera": {
+    "post": 359,
+    "story": 615
+  },
+  "Instrumentacion-Industrial": {
+    "post": 433,
+    "story": 615
+  },
+  "Procesos-Industriales": {
+    "post": 433,
+    "story": 700
+  },
+  "Procesos-Mineros": {
+    "post": 433,
+    "story": 700
+  },
+  "Programacion": {
+    "post": 433,
+    "story": 700
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "Administracion-de-Empresas": {
+    "expandir_lados_post": 0.5,
+    "expandir_arriba_post": 0.14,
+    "expandir_abajo_post": 0.36,
+    "focal_post": [
+      0.4667,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.14,
+    "expandir_abajo_story": 0.62,
+    "focal_story": [
+      0.45,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Gestion-Logistica-Portuaria": {
+    "expandir_arriba_post": 0.12,
+    "expandir_abajo_post": 0.24,
+    "focal_post": [
+      0.63,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.12,
+    "expandir_abajo_story": 0.48,
+    "focal_story": [
+      0.63,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Operaciones-Portuarias": {
+    "expandir_abajo_post": 0.28,
+    "focal_post": [
+      0.62,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_abajo_story": 0.52,
+    "focal_story": [
+      0.62,
+      0,
+      0.6759,
+      0
+    ]
+  }
+}

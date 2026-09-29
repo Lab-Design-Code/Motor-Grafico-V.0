@@ -1,0 +1,76 @@
+{
+  "Automatizacion-y-Control-Industrial": {
+    "expandir_lados_post": 0.7,
+    "expandir_arriba_post": 0.14,
+    "expandir_abajo_post": 0.78,
+    "focal_post": [
+      0.5294,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_abajo_story": 0.56,
+    "focal_story": [
+      0.55,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Gestion-de-Seguridad-y-Vigilancia-Privada": {
+    "expandir_lados_post": 0.3,
+    "expandir_arriba_post": 0.16,
+    "expandir_abajo_post": 0.48,
+    "focal_post": [
+      0.4769,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.04,
+    "expandir_abajo_story": 0.24,
+    "focal_story": [
+      0.47,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Mantenimiento-Industrial": {
+    "expandir_lados_post": 0.5,
+    "expandir_arriba_post": 0.14,
+    "expandir_abajo_post": 0.28,
+    "focal_post": [
+      0.4333,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.12,
+    "expandir_abajo_story": 0.48,
+    "focal_story": [
+      0.4,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Instrumentacion-Industrial": {
+    "expandir_arriba_post": 0.16,
+    "expandir_abajo_post": 0.26,
+    "focal_post": [
+      0.72,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.14,
+    "expandir_abajo_story": 0.44,
+    "focal_story": [
+      0.72,
+      0,
+      0.6759,
+      0
+    ]
+  }
+}

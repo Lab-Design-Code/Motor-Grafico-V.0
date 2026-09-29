@@ -1,0 +1,26 @@
+{
+  "Enfermeria": {
+    "post": 433,
+    "story": 700
+  },
+  "Estetica-Integral": {
+    "post": 433,
+    "story": 700
+  },
+  "Podologia": {
+    "post": 433,
+    "story": 700
+  },
+  "Administracion-de-Centros-de-Salud": {
+    "post": 359,
+    "story": 615
+  },
+  "Rehabilitacion-de-Dependencia-de-Drogas": {
+    "post": 359,
+    "story": 628
+  },
+  "Farmacias": {
+    "post": 433,
+    "story": 700
+  }
+}

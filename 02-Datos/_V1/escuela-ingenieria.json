@@ -1,0 +1,870 @@
+{
+  "escuela": "Escuela de Ingenieria y Tecnologia",
+  "_notas": [
+    "Fuente: 'Documento Admisión 2027 (1).xlsx', hojas 'OA Presencial' (descuento 0,4) y 'OA Online 27' (descuento 0,5).",
+    "Las filas 'NUEVA EN SEDE' se asignan por el bloque del Excel donde están.",
+    "Redondeo de cuota a la decena: 82.916,67 -> 82.920.",
+    "Los niveles de una misma disciplina se agrupan en badges bajo el prefijo del nivel superior (RN-14).",
+    "Cuando hay varios niveles con cuota distinta se toma la menor, porque la plantilla dice 'Cuotas desde' (RN-16)."
+  ],
+  "_supuestos_a_confirmar": [
+    "Prefijo de Construcción Civil e Ingeniería Industrial: 'Carrera Profesional de', porque el nombre no admite 'Ingeniería en'.",
+    "Electricidad usa prefijo distinto por sede: 'Técnico de Nivel Superior en' en La Unión, 'Ingeniería en' en Panguipulli e 'Ingeniería de Ejecución en' online, siguiendo el nivel que se dicta en cada una.",
+    "'Ingeniería en Informática e Ingeniería en Ciberseguridad (doble titulación)' se publica como 'INFORMÁTICA Y CIBERSEGURIDAD' con badge 'Doble Titulación'."
+  ],
+  "carreras": [
+    {
+      "carpeta": "Construccion-Civil",
+      "slug": "Construccion-Civil-Arauco",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "CONSTRUCCIÓN CIVIL",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Arauco",
+      "_codigo": "AR04022 + AR04005",
+      "expandir_lados_post": 0.65,
+      "expandir_arriba_post": 0.36,
+      "expandir_abajo_post": 0.58,
+      "focal_post": [
+        0.4818,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.26,
+      "expandir_abajo_story": 0.54,
+      "focal_story": [
+        0.47,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Construccion-Civil/Construccion-Civil.jpg"
+    },
+    {
+      "carpeta": "Construccion-Civil",
+      "slug": "Construccion-Civil-Concepcion",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "CONSTRUCCIÓN CIVIL",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 40,
+      "cuota": 84500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC04022 + CC04005",
+      "expandir_lados_post": 0.65,
+      "expandir_arriba_post": 0.36,
+      "expandir_abajo_post": 0.58,
+      "focal_post": [
+        0.4818,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.26,
+      "expandir_abajo_story": 0.54,
+      "focal_story": [
+        0.47,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Construccion-Civil/Construccion-Civil.jpg"
+    },
+    {
+      "carpeta": "Construccion-Civil",
+      "slug": "Construccion-Civil-LaUnion",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "CONSTRUCCIÓN CIVIL",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 40,
+      "cuota": 99500,
+      "sede": "Sede La Unión",
+      "_codigo": "LU04022 + NUEVA EN SEDE",
+      "expandir_lados_post": 0.65,
+      "expandir_arriba_post": 0.36,
+      "expandir_abajo_post": 0.58,
+      "focal_post": [
+        0.4818,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.26,
+      "expandir_abajo_story": 0.54,
+      "focal_story": [
+        0.47,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Construccion-Civil/Construccion-Civil.jpg"
+    },
+    {
+      "carpeta": "Construccion-Civil",
+      "slug": "Construccion-Civil-Panguipulli",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "CONSTRUCCIÓN CIVIL",
+      "badges": [
+        "Título Profesional"
+      ],
+      "beca": 40,
+      "cuota": 99500,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG04022",
+      "expandir_lados_post": 0.65,
+      "expandir_arriba_post": 0.36,
+      "expandir_abajo_post": 0.58,
+      "focal_post": [
+        0.4818,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.26,
+      "expandir_abajo_story": 0.54,
+      "focal_story": [
+        0.47,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Construccion-Civil/Construccion-Civil.jpg"
+    },
+    {
+      "carpeta": "Construccion-Civil",
+      "slug": "Construccion-Civil-Online",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "CONSTRUCCIÓN CIVIL",
+      "badges": [
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "NUEVA",
+      "expandir_lados_post": 0.65,
+      "expandir_arriba_post": 0.36,
+      "expandir_abajo_post": 0.58,
+      "focal_post": [
+        0.4818,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.26,
+      "expandir_abajo_story": 0.54,
+      "focal_story": [
+        0.47,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Construccion-Civil/Construccion-Civil.jpg"
+    },
+    {
+      "carpeta": "Ingenieria-Industrial",
+      "slug": "Ingenieria-Industrial-Arauco",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "INGENIERÍA INDUSTRIAL",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 40,
+      "cuota": 100000,
+      "sede": "Sede Arauco",
+      "_codigo": "NUEVA EN SEDE",
+      "expandir_lados_post": 0.8,
+      "expandir_arriba_post": 0.34,
+      "expandir_abajo_post": 0.78,
+      "focal_post": [
+        0.5,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.22,
+      "expandir_abajo_story": 0.76,
+      "focal_story": [
+        0.5,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Ingenieria-Industrial/Ingenieria-Industrial.jpg"
+    },
+    {
+      "carpeta": "Ingenieria-Industrial",
+      "slug": "Ingenieria-Industrial-Concepcion",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "INGENIERÍA INDUSTRIAL",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 40,
+      "cuota": 95000,
+      "sede": "Sede Concepción",
+      "_codigo": "NUEVA EN SEDE",
+      "expandir_lados_post": 0.8,
+      "expandir_arriba_post": 0.34,
+      "expandir_abajo_post": 0.78,
+      "focal_post": [
+        0.5,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.22,
+      "expandir_abajo_story": 0.76,
+      "focal_story": [
+        0.5,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Ingenieria-Industrial/Ingenieria-Industrial.jpg"
+    },
+    {
+      "carpeta": "Ingenieria-Industrial",
+      "slug": "Ingenieria-Industrial-Online",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "INGENIERÍA INDUSTRIAL",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "CV04032 + CV04034",
+      "expandir_lados_post": 0.8,
+      "expandir_arriba_post": 0.34,
+      "expandir_abajo_post": 0.78,
+      "focal_post": [
+        0.5,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.22,
+      "expandir_abajo_story": 0.76,
+      "focal_story": [
+        0.5,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Ingenieria-Industrial/Ingenieria-Industrial.jpg"
+    },
+    {
+      "carpeta": "Electricidad",
+      "slug": "Electricidad-LaUnion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "ELECTRICIDAD",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 100000,
+      "sede": "Sede La Unión",
+      "_codigo": "NUEVA EN SEDE",
+      "expandir_lados_post": 0.55,
+      "expandir_arriba_post": 0.26,
+      "expandir_abajo_post": 0.56,
+      "focal_post": [
+        0.571,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.18,
+      "expandir_abajo_story": 0.54,
+      "focal_story": [
+        0.61,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Electricidad/Electricidad.jpg"
+    },
+    {
+      "carpeta": "Electricidad",
+      "slug": "Electricidad-Panguipulli",
+      "prefijo": "Ingeniería en",
+      "nombre": "ELECTRICIDAD",
+      "badges": [
+        "Título Profesional"
+      ],
+      "beca": 40,
+      "cuota": 99500,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG03003",
+      "expandir_lados_post": 0.55,
+      "expandir_arriba_post": 0.26,
+      "expandir_abajo_post": 0.56,
+      "focal_post": [
+        0.571,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.18,
+      "expandir_abajo_story": 0.54,
+      "focal_story": [
+        0.61,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Electricidad/Electricidad.jpg"
+    },
+    {
+      "carpeta": "Electricidad",
+      "slug": "Electricidad-Online",
+      "prefijo": "Ingeniería de Ejecución en",
+      "nombre": "ELECTRICIDAD",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "CV03004 + CV03003 + CV03028",
+      "expandir_lados_post": 0.55,
+      "expandir_arriba_post": 0.26,
+      "expandir_abajo_post": 0.56,
+      "focal_post": [
+        0.571,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.18,
+      "expandir_abajo_story": 0.54,
+      "focal_story": [
+        0.61,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Electricidad/Electricidad.jpg"
+    },
+    {
+      "carpeta": "Prevencion-de-Riesgos",
+      "slug": "Prevencion-de-Riesgos-Panguipulli",
+      "prefijo": "Ingeniería en",
+      "nombre": "PREVENCIÓN DE RIESGOS",
+      "badges": [
+        "Título Profesional"
+      ],
+      "beca": 40,
+      "cuota": 99500,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG04024",
+      "expandir_lados_post": 0.9,
+      "expandir_arriba_post": 0.28,
+      "expandir_abajo_post": 0.32,
+      "focal_post": [
+        0.4,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.1,
+      "expandir_arriba_story": 0.2,
+      "expandir_abajo_story": 0.28,
+      "focal_story": [
+        0.3272,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Prevencion-de-Riesgos/Prevencion-de-Riesgos.jpg"
+    },
+    {
+      "carpeta": "Prevencion-de-Riesgos",
+      "slug": "Prevencion-de-Riesgos-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "PREVENCIÓN DE RIESGOS",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV04003 + CV04024 + CV04025",
+      "expandir_lados_post": 0.9,
+      "expandir_arriba_post": 0.28,
+      "expandir_abajo_post": 0.32,
+      "focal_post": [
+        0.4,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.1,
+      "expandir_arriba_story": 0.2,
+      "expandir_abajo_story": 0.28,
+      "focal_story": [
+        0.3272,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Prevencion-de-Riesgos/Prevencion-de-Riesgos.jpg"
+    },
+    {
+      "carpeta": "Automatizacion-y-Control-Industrial",
+      "slug": "Automatizacion-y-Control-Industrial-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "AUTOMATIZACIÓN Y CONTROL INDUSTRIAL",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV04030 + CV04031 + CV04033",
+      "expandir_lados_post": 0.3,
+      "expandir_arriba_post": 0.06,
+      "expandir_abajo_post": 0.5,
+      "focal_post": [
+        0.5385,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_abajo_story": 0.4,
+      "focal_story": [
+        0.55,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Automatizacion-y-Control-Industrial/Automatizacion-y-Control-Industrial.jpg"
+    },
+    {
+      "carpeta": "Ciberseguridad",
+      "slug": "Ciberseguridad-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "CIBERSEGURIDAD",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV03017 + CV03023 + CV03025",
+      "expandir_lados_post": 1.4,
+      "expandir_arriba_post": 0.36,
+      "expandir_abajo_post": 0.58,
+      "focal_post": [
+        0.3958,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.4,
+      "expandir_arriba_story": 0.24,
+      "expandir_abajo_story": 0.52,
+      "focal_story": [
+        0.3214,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Ciberseguridad/Ciberseguridad.jpg"
+    },
+    {
+      "carpeta": "Ciencia-de-Datos",
+      "slug": "Ciencia-de-Datos-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "CIENCIA DE DATOS",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV03021 + CV03022 + CV03024",
+      "expandir_lados_post": 0.1,
+      "expandir_arriba_post": 0.2,
+      "expandir_abajo_post": 0.1,
+      "focal_post": [
+        0.4273,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.14,
+      "expandir_abajo_story": 0.06,
+      "focal_story": [
+        0.42,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Ciencia-de-Datos/Ciencia-de-Datos.jpg"
+    },
+    {
+      "carpeta": "Gestion-de-Seguridad-y-Vigilancia-Privada",
+      "slug": "Gestion-de-Seguridad-y-Vigilancia-Privada-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "GESTIÓN DE SEGURIDAD Y VIGILANCIA PRIVADA",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "CV04035 + CV04036 + CV04037",
+      "expandir_lados_post": 0.05,
+      "expandir_arriba_post": 0.1,
+      "expandir_abajo_post": 0.24,
+      "focal_post": [
+        0.4714,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_abajo_story": 0.04,
+      "focal_story": [
+        0.47,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Gestion-de-Seguridad-y-Vigilancia-Privada/Gestion-de-Seguridad-y-Vigilancia-Privada.jpg"
+    },
+    {
+      "carpeta": "Informatica",
+      "slug": "Informatica-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "INFORMÁTICA",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "CV03020 + CV03026",
+      "expandir_arriba_post": 0.16,
+      "expandir_abajo_post": 0.38,
+      "focal_post": [
+        0.67,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.08,
+      "expandir_abajo_story": 0.34,
+      "focal_story": [
+        0.67,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Informatica/Informatica.jpg"
+    },
+    {
+      "carpeta": "Informatica-y-Ciberseguridad",
+      "slug": "Informatica-y-Ciberseguridad-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "INFORMÁTICA Y CIBERSEGURIDAD",
+      "badges": [
+        "Doble Titulación"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "NUEVA",
+      "expandir_lados_post": 0.3,
+      "expandir_arriba_post": 0.46,
+      "expandir_abajo_post": 0.78,
+      "focal_post": [
+        0.6308,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.16,
+      "expandir_abajo_story": 0.68,
+      "focal_story": [
+        0.67,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Informatica-y-Ciberseguridad/Informatica-y-Ciberseguridad.jpg"
+    },
+    {
+      "carpeta": "Inteligencia-Artificial",
+      "slug": "Inteligencia-Artificial-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "INTELIGENCIA ARTIFICIAL APLICADA",
+      "badges": [
+        "Título Profesional"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "NUEVA",
+      "expandir_lados_post": 0.5,
+      "expandir_arriba_post": 0.22,
+      "expandir_abajo_post": 0.6,
+      "focal_post": [
+        0.4933,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.1,
+      "expandir_abajo_story": 0.44,
+      "focal_story": [
+        0.49,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Inteligencia-Artificial/Inteligencia-Artificial.jpg"
+    },
+    {
+      "carpeta": "Mantenimiento-Industrial",
+      "slug": "Mantenimiento-Industrial-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "MANTENIMIENTO INDUSTRIAL",
+      "badges": [
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "NUEVA",
+      "expandir_lados_post": 0.3,
+      "expandir_arriba_post": 0.1,
+      "expandir_abajo_post": 0.12,
+      "focal_post": [
+        0.4231,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.08,
+      "expandir_abajo_story": 0.26,
+      "focal_story": [
+        0.4,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Mantenimiento-Industrial/Mantenimiento-Industrial.jpg"
+    },
+    {
+      "carpeta": "Minas",
+      "slug": "Minas-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "MINAS",
+      "badges": [
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "CV04038 + CV04018",
+      "expandir_lados_post": 0.3,
+      "expandir_arriba_post": 0.1,
+      "expandir_abajo_post": 0.16,
+      "focal_post": [
+        0.4461,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.04,
+      "expandir_abajo_story": 0.1,
+      "focal_story": [
+        0.43,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Minas/Minas.jpg"
+    },
+    {
+      "carpeta": "Operaciones-de-Planta-Minera",
+      "slug": "Operaciones-de-Planta-Minera-Online",
+      "prefijo": "Ingeniería en",
+      "nombre": "OPERACIONES DE PLANTA MINERA",
+      "badges": [
+        "Título Técnico",
+        "Título Profesional",
+        "Plan Continuidad"
+      ],
+      "beca": 50,
+      "cuota": 78750,
+      "sede": "Sede Online",
+      "_codigo": "CV04040 + CV04039 + CV04045",
+      "expandir_lados_post": 0.4,
+      "expandir_abajo_post": 0.6,
+      "focal_post": [
+        0.5143,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_abajo_story": 0.58,
+      "focal_story": [
+        0.52,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Operaciones-de-Planta-Minera/Operaciones-de-Planta-Minera.jpg"
+    },
+    {
+      "carpeta": "Instrumentacion-Industrial",
+      "slug": "Instrumentacion-Industrial-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "INSTRUMENTACIÓN INDUSTRIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "NUEVA",
+      "expandir_arriba_post": 0.12,
+      "expandir_abajo_post": 0.1,
+      "focal_post": [
+        0.72,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.1,
+      "expandir_abajo_story": 0.22,
+      "focal_story": [
+        0.72,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Instrumentacion-Industrial/Instrumentacion-Industrial.jpg"
+    },
+    {
+      "carpeta": "Procesos-Industriales",
+      "slug": "Procesos-Industriales-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "PROCESOS INDUSTRIALES",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "CV04021ONL",
+      "expandir_arriba_post": 0.06,
+      "expandir_abajo_post": 0.24,
+      "focal_post": [
+        0.51,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_abajo_story": 0.2,
+      "focal_story": [
+        0.51,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Procesos-Industriales/Procesos-Industriales.jpg"
+    },
+    {
+      "carpeta": "Procesos-Mineros",
+      "slug": "Procesos-Mineros-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "PROCESOS MINEROS",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV04041ONL",
+      "expandir_lados_post": 0.85,
+      "expandir_arriba_post": 0.2,
+      "expandir_abajo_post": 0.36,
+      "focal_post": [
+        0.3757,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.15,
+      "expandir_arriba_story": 0.12,
+      "expandir_abajo_story": 0.3,
+      "focal_story": [
+        0.3,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Procesos-Mineros/Procesos-Mineros.jpg"
+    },
+    {
+      "carpeta": "Programacion",
+      "slug": "Programacion-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "PROGRAMACIÓN",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 87500,
+      "sede": "Sede Online",
+      "_codigo": "CV03019ONL",
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.06,
+      "focal_post": [
+        0.308,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.02,
+      "focal_story": [
+        0.26,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Ingenieria y Tecnologia/Programacion/Programacion.jpg"
+    }
+  ]
+}

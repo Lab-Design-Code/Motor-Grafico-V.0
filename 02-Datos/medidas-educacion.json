@@ -1,0 +1,73 @@
+{
+  "_como_se_miden": [
+    "Todas las medidas son fracciones de la foto ORIGINAL, no del lienzo.",
+    "pelo: tope del pelo. menton: punta del menton. cara_x: centro horizontal de la cabeza.",
+    "Se leen con 00-Scripts/grilla_fina.py sobre un recorte ampliado (RN-25).",
+    "Cuando hay mas de un sujeto se elige uno, no el punto medio (RN-22).",
+    "titulo_post / titulo_story los escribe 00-Scripts/medir_titulo.py."
+  ],
+  "_nota_psicopedagogia": [
+    "La foto trae a la profesional y a una nina. El sujeto es la profesional, que",
+    "esta bastante a la izquierda (cara_x 0.25): llevarla hasta la silueta exige",
+    "mucha expansion lateral, porque es lo unico que da recorrido horizontal (RN-20)."
+  ],
+  "Psicopedagogia": {
+    "ancho": 7952,
+    "alto": 5304,
+    "pelo": 0.075,
+    "menton": 0.225,
+    "cara_x": 0.54,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Educacion-Diferencial": {
+    "ancho": 7680,
+    "alto": 4320,
+    "pelo": 0.085,
+    "menton": 0.315,
+    "cara_x": 0.45,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "_nota_parvularia": [
+    "La foto anterior (5504x8256, heredada del piloto) era un primer plano: el rostro",
+    "ocupaba el 28,5% del alto y el solver no encontraba solucion para el Post a",
+    "ninguna combinacion de expansiones. Se reemplazo por un plano medio."
+  ],
+  "Educacion-Parvularia": {
+    "ancho": 4096,
+    "alto": 2304,
+    "pelo": 0.066,
+    "menton": 0.285,
+    "cara_x": 0.48,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Trabajo-Social": {
+    "ancho": 8192,
+    "alto": 5464,
+    "pelo": 0.115,
+    "menton": 0.335,
+    "cara_x": 0.365,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Educacion-Basica": {
+    "ancho": 6594,
+    "alto": 4397,
+    "pelo": 0.085,
+    "menton": 0.335,
+    "cara_x": 0.3,
+    "titulo_post": 433,
+    "titulo_story": 700
+  },
+  "Educacion-Basica-y-Parvularia": {
+    "ancho": 3840,
+    "alto": 2160,
+    "pelo": 0.044,
+    "menton": 0.27,
+    "cara_x": 0.4,
+    "titulo_post": 359,
+    "titulo_story": 615
+  }
+}

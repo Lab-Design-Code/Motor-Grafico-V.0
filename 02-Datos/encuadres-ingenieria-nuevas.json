@@ -1,0 +1,346 @@
+{
+  "Construccion-Civil": {
+    "expandir_lados_post": 0.7,
+    "expandir_arriba_post": 0.18,
+    "expandir_abajo_post": 0.46,
+    "focal_post": [
+      0.4471,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.05,
+    "expandir_arriba_story": 0.3,
+    "expandir_abajo_story": 1.1,
+    "focal_story": [
+      0.4143,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Ingenieria-Industrial": {
+    "expandir_lados_post": 0.55,
+    "expandir_arriba_post": 0.28,
+    "expandir_abajo_post": 0.4,
+    "focal_post": [
+      0.5129,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.48,
+    "expandir_abajo_story": 0.8,
+    "focal_story": [
+      0.52,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Electricidad": {
+    "expandir_lados_post": 0.85,
+    "expandir_arriba_post": 0.74,
+    "expandir_abajo_post": 0.74,
+    "focal_post": [
+      0.5973,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.38,
+    "expandir_abajo_story": 0.94,
+    "focal_story": [
+      0.68,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Prevencion-de-Riesgos": {
+    "expandir_lados_post": 0.85,
+    "expandir_arriba_post": 0.1,
+    "expandir_abajo_post": 0.58,
+    "focal_post": [
+      0.4135,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.25,
+    "expandir_arriba_story": 0.26,
+    "expandir_abajo_story": 1.38,
+    "focal_story": [
+      0.372,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Automatizacion-y-Control-Industrial": {
+    "expandir_lados_post": 1.75,
+    "expandir_arriba_post": 0.42,
+    "expandir_abajo_post": 0.72,
+    "focal_post": [
+      0.3982,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.7,
+    "expandir_arriba_story": 0.62,
+    "expandir_abajo_story": 1.22,
+    "focal_story": [
+      0.3353,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Ciberseguridad": {
+    "expandir_lados_post": 0.1,
+    "expandir_arriba_post": 0.22,
+    "expandir_abajo_post": 0.34,
+    "focal_post": [
+      0.6818,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.48,
+    "expandir_abajo_story": 0.8,
+    "focal_story": [
+      0.7,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Ciencia-de-Datos": {
+    "expandir_lados_post": 0.75,
+    "expandir_arriba_post": 0.38,
+    "expandir_abajo_post": 0.62,
+    "focal_post": [
+      0.5657,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.38,
+    "expandir_abajo_story": 0.94,
+    "focal_story": [
+      0.615,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Gestion-de-Seguridad-y-Vigilancia-Privada": {
+    "expandir_lados_post": 0.85,
+    "expandir_arriba_post": 0.08,
+    "expandir_abajo_post": 0.58,
+    "focal_post": [
+      0.4162,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.25,
+    "expandir_arriba_story": 0.44,
+    "expandir_abajo_story": 1.08,
+    "focal_story": [
+      0.376,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Informatica": {
+    "expandir_arriba_post": 0.14,
+    "expandir_abajo_post": 0.24,
+    "focal_post": [
+      0.585,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.44,
+    "expandir_abajo_story": 1.34,
+    "focal_story": [
+      0.585,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Informatica-y-Ciberseguridad": {
+    "expandir_lados_story": 0.15,
+    "expandir_arriba_story": 0.42,
+    "expandir_abajo_story": 1.02,
+    "focal_story": [
+      0.3913,
+      0,
+      0.6759,
+      0
+    ],
+    "expandir_lados_post": 1.45,
+    "expandir_arriba_post": 0.52,
+    "expandir_abajo_post": 0.945,
+    "focal_post": [
+      0.449,
+      1,
+      0.7222,
+      1
+    ]
+  },
+  "Inteligencia-Artificial": {
+    "expandir_lados_post": 0.05,
+    "expandir_arriba_post": 0.08,
+    "expandir_abajo_post": 0.66,
+    "focal_post": [
+      0.7858,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.44,
+    "expandir_abajo_story": 1.34,
+    "focal_story": [
+      0.8,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Mantenimiento-Industrial": {
+    "expandir_lados_post": 0.6,
+    "expandir_arriba_post": 0.1,
+    "expandir_abajo_post": 0.28,
+    "focal_post": [
+      0.3062,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.8,
+    "expandir_arriba_story": 0.76,
+    "expandir_abajo_story": 1.68,
+    "focal_story": [
+      0.3278,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Minas": {
+    "expandir_arriba_story": 0.36,
+    "expandir_abajo_story": 0.96,
+    "focal_story": [
+      0.46,
+      0,
+      0.6759,
+      0
+    ],
+    "expandir_lados_post": 1.0,
+    "expandir_arriba_post": 0.42,
+    "expandir_abajo_post": 0.79,
+    "focal_post": [
+      0.48,
+      1,
+      0.7222,
+      1
+    ]
+  },
+  "Operaciones-de-Planta-Minera": {
+    "expandir_lados_story": 0.15,
+    "expandir_arriba_story": 0.4,
+    "expandir_abajo_story": 1.1,
+    "focal_story": [
+      0.4652,
+      0,
+      0.6759,
+      0
+    ],
+    "expandir_lados_post": 1.95,
+    "expandir_arriba_post": 0.67,
+    "expandir_abajo_post": 1.31,
+    "focal_post": [
+      0.4864,
+      1,
+      0.7222,
+      1
+    ]
+  },
+  "Instrumentacion-Industrial": {
+    "expandir_abajo_post": 0.18,
+    "focal_post": [
+      0.415,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.44,
+    "expandir_abajo_story": 1.34,
+    "focal_story": [
+      0.415,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Procesos-Industriales": {
+    "expandir_arriba_post": 0.08,
+    "expandir_abajo_post": 0.12,
+    "focal_post": [
+      0.575,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.58,
+    "expandir_abajo_story": 1.0,
+    "focal_story": [
+      0.575,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Procesos-Mineros": {
+    "expandir_lados_post": 1.1,
+    "expandir_arriba_post": 0.4,
+    "expandir_abajo_post": 0.66,
+    "focal_post": [
+      0.4952,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.38,
+    "expandir_abajo_story": 0.94,
+    "focal_story": [
+      0.49,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Programacion": {
+    "expandir_lados_post": 1.9,
+    "expandir_abajo_post": 0.46,
+    "focal_post": [
+      0.5034,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.3,
+    "expandir_abajo_story": 0.54,
+    "focal_story": [
+      0.5077,
+      0,
+      0.6759,
+      0
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "Educacion-Basica": {
+    "expandir_lados_post": 0.95,
+    "expandir_arriba_post": 0.24,
+    "expandir_abajo_post": 0.38,
+    "focal_post": [
+      0.3974,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.4,
+    "expandir_arriba_story": 0.44,
+    "expandir_abajo_story": 1.22,
+    "focal_story": [
+      0.3571,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Educacion-Parvularia": {
+    "expandir_lados_post": 0.2,
+    "expandir_arriba_post": 0.24,
+    "expandir_abajo_post": 0.26,
+    "focal_post": [
+      0.4833,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.68,
+    "expandir_abajo_story": 0.88,
+    "focal_story": [
+      0.48,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Educacion-Diferencial": {
+    "expandir_lados_post": 0.35,
+    "expandir_arriba_post": 0.24,
+    "expandir_abajo_post": 0.34,
+    "focal_post": [
+      0.463,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.68,
+    "expandir_abajo_story": 0.88,
+    "focal_story": [
+      0.45,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Psicopedagogia": {
+    "expandir_arriba_post": 0.16,
+    "focal_post": [
+      0.54,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.48,
+    "expandir_abajo_story": 0.8,
+    "focal_story": [
+      0.54,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Trabajo-Social": {
+    "expandir_lados_post": 0.65,
+    "expandir_arriba_post": 0.18,
+    "expandir_abajo_post": 0.3,
+    "focal_post": [
+      0.4182,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.2,
+    "expandir_arriba_story": 0.48,
+    "expandir_abajo_story": 0.98,
+    "focal_story": [
+      0.3875,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Educacion-Basica-y-Parvularia": {
+    "expandir_lados_post": 1.0,
+    "expandir_arriba_post": 0.42,
+    "expandir_abajo_post": 0.7,
+    "focal_post": [
+      0.45,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.05,
+    "expandir_arriba_story": 0.54,
+    "expandir_abajo_story": 1.1,
+    "focal_story": [
+      0.4048,
+      0,
+      0.6759,
+      0
+    ]
+  }
+}

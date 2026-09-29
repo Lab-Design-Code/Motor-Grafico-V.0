@@ -1,0 +1,725 @@
+{
+  "escuela": "Escuela de Educacion y Desarrollo Social",
+  "_notas": [
+    "Fuente: 'Documento Admisión 2027 (1).xlsx', hojas 'OA Presencial' (descuento 0,4) y 'OA Online 27' (descuento 0,5).",
+    "Unidad de réplica: una gráfica por carrera + sede, agrupando jornadas y tipos de título en badges (RN-14).",
+    "Sede deducida del prefijo del código: AR=Arauco, CC=Concepción, LU=La Unión, PG=Panguipulli; online = Sede Online.",
+    "Redondeo de cuota: a la decena. Se dedujo del post de Ingeniería en Minas online, que muestra $82.920 para un cálculo de 82.916,67.",
+    "Psicopedagogía Concepción y Online agrupan Plan Continuidad y Profesional en dos badges, porque ambas existen en esa sede."
+  ],
+  "_supuestos_a_confirmar": [
+    "Prefijo de Psicopedagogía: se usó 'Carrera Profesional de' porque no es Técnico de Nivel Superior y la plantilla exige prefijo.",
+    "'TNS en Educación Básica con doble titulación en Párvulo' se publica como 'EDUCACIÓN BÁSICA Y PARVULARIA' con badge 'Doble Titulación': el nombre administrativo no cabe en el título."
+  ],
+  "carreras": [
+    {
+      "carpeta": "Psicopedagogia",
+      "slug": "Psicopedagogia-Arauco",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "PSICOPEDAGOGÍA",
+      "badges": [
+        "Plan Continuidad"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Arauco",
+      "_codigo": "AR02013",
+      "expandir_lados_post": 1.15,
+      "expandir_arriba_post": 0.24,
+      "expandir_abajo_post": 0.5,
+      "focal_post": [
+        0.3837,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.3,
+      "expandir_arriba_story": 0.16,
+      "expandir_abajo_story": 0.48,
+      "focal_story": [
+        0.3077,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Psicopedagogia/Psicopedagogia.jpg"
+    },
+    {
+      "carpeta": "Psicopedagogia",
+      "slug": "Psicopedagogia-Concepcion",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "PSICOPEDAGOGÍA",
+      "badges": [
+        "Plan Continuidad",
+        "Título Profesional"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC02013 + CC02017",
+      "expandir_lados_post": 1.15,
+      "expandir_arriba_post": 0.24,
+      "expandir_abajo_post": 0.5,
+      "focal_post": [
+        0.3837,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.3,
+      "expandir_arriba_story": 0.16,
+      "expandir_abajo_story": 0.48,
+      "focal_story": [
+        0.3077,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Psicopedagogia/Psicopedagogia.jpg"
+    },
+    {
+      "carpeta": "Psicopedagogia",
+      "slug": "Psicopedagogia-Panguipulli",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "PSICOPEDAGOGÍA",
+      "badges": [
+        "Plan Continuidad"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG02013",
+      "expandir_lados_post": 1.15,
+      "expandir_arriba_post": 0.24,
+      "expandir_abajo_post": 0.5,
+      "focal_post": [
+        0.3837,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.3,
+      "expandir_arriba_story": 0.16,
+      "expandir_abajo_story": 0.48,
+      "focal_story": [
+        0.3077,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Psicopedagogia/Psicopedagogia.jpg"
+    },
+    {
+      "carpeta": "Psicopedagogia",
+      "slug": "Psicopedagogia-Online",
+      "prefijo": "Carrera Profesional de",
+      "nombre": "PSICOPEDAGOGÍA",
+      "badges": [
+        "Plan Continuidad",
+        "Título Profesional"
+      ],
+      "beca": 50,
+      "cuota": 82920,
+      "sede": "Sede Online",
+      "_codigo": "CV02013ONL + CV02017ONL",
+      "expandir_lados_post": 1.15,
+      "expandir_arriba_post": 0.24,
+      "expandir_abajo_post": 0.5,
+      "focal_post": [
+        0.3837,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.3,
+      "expandir_arriba_story": 0.16,
+      "expandir_abajo_story": 0.48,
+      "focal_story": [
+        0.3077,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Psicopedagogia/Psicopedagogia.jpg"
+    },
+    {
+      "carpeta": "Educacion-Diferencial",
+      "slug": "Educacion-Diferencial-Arauco",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN DIFERENCIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Arauco",
+      "_codigo": "AR02002",
+      "expandir_lados_post": 0.15,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.14,
+      "focal_post": [
+        0.4478,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.12,
+      "expandir_abajo_story": 0.1,
+      "focal_story": [
+        0.44,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Diferencial/Educacion-Diferencial.jpg"
+    },
+    {
+      "carpeta": "Educacion-Diferencial",
+      "slug": "Educacion-Diferencial-Concepcion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN DIFERENCIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC02002",
+      "expandir_lados_post": 0.15,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.14,
+      "focal_post": [
+        0.4478,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.12,
+      "expandir_abajo_story": 0.1,
+      "focal_story": [
+        0.44,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Diferencial/Educacion-Diferencial.jpg"
+    },
+    {
+      "carpeta": "Educacion-Diferencial",
+      "slug": "Educacion-Diferencial-LaUnion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN DIFERENCIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede La Unión",
+      "_codigo": "LU02002",
+      "expandir_lados_post": 0.15,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.14,
+      "focal_post": [
+        0.4478,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.12,
+      "expandir_abajo_story": 0.1,
+      "focal_story": [
+        0.44,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Diferencial/Educacion-Diferencial.jpg"
+    },
+    {
+      "carpeta": "Educacion-Diferencial",
+      "slug": "Educacion-Diferencial-Panguipulli",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN DIFERENCIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG02002",
+      "expandir_lados_post": 0.15,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.14,
+      "focal_post": [
+        0.4478,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.12,
+      "expandir_abajo_story": 0.1,
+      "focal_story": [
+        0.44,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Diferencial/Educacion-Diferencial.jpg"
+    },
+    {
+      "carpeta": "Educacion-Diferencial",
+      "slug": "Educacion-Diferencial-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN DIFERENCIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 78750,
+      "sede": "Sede Online",
+      "_codigo": "CV02002ONL",
+      "expandir_lados_post": 0.15,
+      "expandir_arriba_post": 0.18,
+      "expandir_abajo_post": 0.14,
+      "focal_post": [
+        0.4478,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.12,
+      "expandir_abajo_story": 0.1,
+      "focal_story": [
+        0.44,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Diferencial/Educacion-Diferencial.jpg"
+    },
+    {
+      "carpeta": "Educacion-Parvularia",
+      "slug": "Educacion-Parvularia-Arauco",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN PARVULARIA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Arauco",
+      "_codigo": "AR02001",
+      "expandir_arriba_post": 0.16,
+      "focal_post": [
+        0.48,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.1,
+      "focal_story": [
+        0.48,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Parvularia/Educacion-Parvularia.jpg"
+    },
+    {
+      "carpeta": "Educacion-Parvularia",
+      "slug": "Educacion-Parvularia-Concepcion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN PARVULARIA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC02001",
+      "expandir_arriba_post": 0.16,
+      "focal_post": [
+        0.48,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.1,
+      "focal_story": [
+        0.48,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Parvularia/Educacion-Parvularia.jpg"
+    },
+    {
+      "carpeta": "Educacion-Parvularia",
+      "slug": "Educacion-Parvularia-LaUnion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN PARVULARIA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede La Unión",
+      "_codigo": "LU02001",
+      "expandir_arriba_post": 0.16,
+      "focal_post": [
+        0.48,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.1,
+      "focal_story": [
+        0.48,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Parvularia/Educacion-Parvularia.jpg"
+    },
+    {
+      "carpeta": "Educacion-Parvularia",
+      "slug": "Educacion-Parvularia-Panguipulli",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN PARVULARIA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG02001",
+      "expandir_arriba_post": 0.16,
+      "focal_post": [
+        0.48,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.1,
+      "focal_story": [
+        0.48,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Parvularia/Educacion-Parvularia.jpg"
+    },
+    {
+      "carpeta": "Educacion-Parvularia",
+      "slug": "Educacion-Parvularia-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN PARVULARIA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 78750,
+      "sede": "Sede Online",
+      "_codigo": "CV02001ONL",
+      "expandir_arriba_post": 0.16,
+      "focal_post": [
+        0.48,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.1,
+      "focal_story": [
+        0.48,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Parvularia/Educacion-Parvularia.jpg"
+    },
+    {
+      "carpeta": "Trabajo-Social",
+      "slug": "Trabajo-Social-Arauco",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "TRABAJO SOCIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Arauco",
+      "_codigo": "AR02016",
+      "expandir_lados_post": 1.1,
+      "expandir_arriba_post": 0.4,
+      "expandir_abajo_post": 0.7,
+      "focal_post": [
+        0.5,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.05,
+      "expandir_arriba_story": 0.3,
+      "expandir_abajo_story": 0.7,
+      "focal_story": [
+        0.5,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Trabajo-Social/Trabajo-Social.jpg"
+    },
+    {
+      "carpeta": "Trabajo-Social",
+      "slug": "Trabajo-Social-Concepcion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "TRABAJO SOCIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC02016",
+      "expandir_lados_post": 1.1,
+      "expandir_arriba_post": 0.4,
+      "expandir_abajo_post": 0.7,
+      "focal_post": [
+        0.5,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.05,
+      "expandir_arriba_story": 0.3,
+      "expandir_abajo_story": 0.7,
+      "focal_story": [
+        0.5,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Trabajo-Social/Trabajo-Social.jpg"
+    },
+    {
+      "carpeta": "Trabajo-Social",
+      "slug": "Trabajo-Social-LaUnion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "TRABAJO SOCIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede La Unión",
+      "_codigo": "LU02016",
+      "expandir_lados_post": 1.1,
+      "expandir_arriba_post": 0.4,
+      "expandir_abajo_post": 0.7,
+      "focal_post": [
+        0.5,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.05,
+      "expandir_arriba_story": 0.3,
+      "expandir_abajo_story": 0.7,
+      "focal_story": [
+        0.5,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Trabajo-Social/Trabajo-Social.jpg"
+    },
+    {
+      "carpeta": "Trabajo-Social",
+      "slug": "Trabajo-Social-Panguipulli",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "TRABAJO SOCIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Panguipulli",
+      "_codigo": "PG02016",
+      "expandir_lados_post": 1.1,
+      "expandir_arriba_post": 0.4,
+      "expandir_abajo_post": 0.7,
+      "focal_post": [
+        0.5,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.05,
+      "expandir_arriba_story": 0.3,
+      "expandir_abajo_story": 0.7,
+      "focal_story": [
+        0.5,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Trabajo-Social/Trabajo-Social.jpg"
+    },
+    {
+      "carpeta": "Trabajo-Social",
+      "slug": "Trabajo-Social-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "TRABAJO SOCIAL",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 78750,
+      "sede": "Sede Online",
+      "_codigo": "CV02016ONL",
+      "expandir_lados_post": 1.1,
+      "expandir_arriba_post": 0.4,
+      "expandir_abajo_post": 0.7,
+      "focal_post": [
+        0.5,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_lados_story": 0.05,
+      "expandir_arriba_story": 0.3,
+      "expandir_abajo_story": 0.7,
+      "focal_story": [
+        0.5,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Trabajo-Social/Trabajo-Social.jpg"
+    },
+    {
+      "carpeta": "Educacion-Basica",
+      "slug": "Educacion-Basica-Concepcion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN BÁSICA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede Concepción",
+      "_codigo": "CC06003",
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.12,
+      "expandir_abajo_post": 0.22,
+      "focal_post": [
+        0.484,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.06,
+      "expandir_abajo_story": 0.18,
+      "focal_story": [
+        0.48,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Basica/Educacion-Basica.jpg"
+    },
+    {
+      "carpeta": "Educacion-Basica",
+      "slug": "Educacion-Basica-LaUnion",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN BÁSICA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 40,
+      "cuota": 89500,
+      "sede": "Sede La Unión",
+      "_codigo": "LU06003",
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.12,
+      "expandir_abajo_post": 0.22,
+      "focal_post": [
+        0.484,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.06,
+      "expandir_abajo_story": 0.18,
+      "focal_story": [
+        0.48,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Basica/Educacion-Basica.jpg"
+    },
+    {
+      "carpeta": "Educacion-Basica",
+      "slug": "Educacion-Basica-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN BÁSICA",
+      "badges": [
+        "Título Técnico"
+      ],
+      "beca": 50,
+      "cuota": 78750,
+      "sede": "Sede Online",
+      "_codigo": "CV02014ONL",
+      "expandir_lados_post": 0.25,
+      "expandir_arriba_post": 0.12,
+      "expandir_abajo_post": 0.22,
+      "focal_post": [
+        0.484,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.06,
+      "expandir_abajo_story": 0.18,
+      "focal_story": [
+        0.48,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Basica/Educacion-Basica.jpg"
+    },
+    {
+      "carpeta": "Educacion-Basica-y-Parvularia",
+      "slug": "Educacion-Basica-y-Parvularia-Online",
+      "prefijo": "Técnico de Nivel Superior en",
+      "nombre": "EDUCACIÓN BÁSICA Y PARVULARIA",
+      "badges": [
+        "Doble Titulación"
+      ],
+      "beca": 50,
+      "cuota": 78750,
+      "sede": "Sede Online",
+      "_codigo": "NUEVA",
+      "expandir_lados_post": 0.6,
+      "expandir_arriba_post": 0.38,
+      "expandir_abajo_post": 0.6,
+      "focal_post": [
+        0.5125,
+        1,
+        0.7222,
+        1
+      ],
+      "expandir_arriba_story": 0.22,
+      "expandir_abajo_story": 0.38,
+      "focal_story": [
+        0.52,
+        0,
+        0.6759,
+        0
+      ],
+      "foto": "Escuela de Educacion y Desarrollo Social/Educacion-Basica-y-Parvularia/Educacion-Basica-y-Parvularia.jpg"
+    }
+  ]
+}

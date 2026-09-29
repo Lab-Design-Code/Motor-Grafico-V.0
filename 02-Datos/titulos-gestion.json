@@ -1,0 +1,54 @@
+{
+  "Administracion-de-Empresas": {
+    "post": 433,
+    "story": 615
+  },
+  "Maquinaria-Naval": {
+    "post": 433,
+    "story": 700
+  },
+  "Transporte-Maritimo": {
+    "post": 433,
+    "story": 700
+  },
+  "Contabilidad-General": {
+    "post": 433,
+    "story": 700
+  },
+  "Contador-Auditor": {
+    "post": 433,
+    "story": 700
+  },
+  "Administracion-Publica": {
+    "post": 433,
+    "story": 700
+  },
+  "Administracion-de-Recursos-Humanos": {
+    "post": 359,
+    "story": 615
+  },
+  "Gestion-Logistica": {
+    "post": 433,
+    "story": 700
+  },
+  "Gestion-Logistica-Portuaria": {
+    "post": 433,
+    "story": 615
+  },
+  "Marketing-Digital": {
+    "post": 433,
+    "story": 700
+  },
+  "Comercio-Exterior": {
+    "post": 433,
+    "story": 700
+  },
+  "Gestion-Comercial-y-Ventas": {
+    "post": 433,
+    "story": 615
+  },
+  "Operaciones-Portuarias": {
+    "post": 433,
+    "story": 615
+  }
+}

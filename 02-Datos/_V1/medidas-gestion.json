@@ -1,0 +1,74 @@
+{
+  "_como_se_miden": [
+    "Todas las medidas son fracciones de la foto ORIGINAL, no del lienzo.",
+    "pelo: tope del pelo. menton: punta del menton. cara_x: centro horizontal de la cabeza.",
+    "Se leen con 00-Scripts/grilla_fina.py sobre un recorte ampliado (RN-25).",
+    "Cuando el sujeto lleva casco, 'pelo' es el tope del casco: es lo que no puede entrar en la zona del logo.",
+    "titulo_post / titulo_story los escribe 00-Scripts/medir_titulo.py."
+  ],
+  "Administracion-de-Empresas": {
+    "ancho": 8192, "alto": 5464,
+    "pelo": 0.155, "menton": 0.38, "cara_x": 0.45,
+    "titulo_post": 465, "titulo_story": 678
+  },
+  "Maquinaria-Naval": {
+    "ancho": 6016, "alto": 4016,
+    "pelo": 0.14, "menton": 0.48, "cara_x": 0.40,
+    "titulo_post": 465, "titulo_story": 763
+  },
+  "Transporte-Maritimo": {
+    "ancho": 6016, "alto": 4016,
+    "pelo": 0.18, "menton": 0.36, "cara_x": 0.47,
+    "titulo_post": 465, "titulo_story": 763
+  },
+  "Contabilidad-General": {
+    "ancho": 8192, "alto": 5464,
+    "pelo": 0.12, "menton": 0.34, "cara_x": 0.42,
+    "titulo_post": 465, "titulo_story": 763
+  },
+  "Contador-Auditor": {
+    "ancho": 5616, "alto": 3744,
+    "pelo": 0.10, "menton": 0.40, "cara_x": 0.62,
+    "titulo_post": 465, "titulo_story": 763
+  },
+  "Administracion-Publica": {
+    "ancho": 8184, "alto": 5453,
+    "pelo": 0.045, "menton": 0.22, "cara_x": 0.19,
+    "titulo_post": 465, "titulo_story": 763
+  },
+  "Administracion-de-Recursos-Humanos": {
+    "ancho": 8192, "alto": 5464,
+    "pelo": 0.175, "menton": 0.39, "cara_x": 0.46,
+    "titulo_post": 391, "titulo_story": 678
+  },
+  "Gestion-Logistica": {
+    "ancho": 9504, "alto": 6336,
+    "pelo": 0.145, "menton": 0.35, "cara_x": 0.755,
+    "titulo_post": 465, "titulo_story": 763
+  },
+  "Gestion-Logistica-Portuaria": {
+    "ancho": 6676, "alto": 4101,
+    "pelo": 0.145, "menton": 0.345, "cara_x": 0.63,
+    "titulo_post": 465, "titulo_story": 678
+  },
+  "Marketing-Digital": {
+    "ancho": 8192, "alto": 5464,
+    "pelo": 0.045, "menton": 0.31, "cara_x": 0.43,
+    "titulo_post": 465, "titulo_story": 763
+  },
+  "Comercio-Exterior": {
+    "ancho": 4096, "alto": 2304,
+    "pelo": 0.075, "menton": 0.30, "cara_x": 0.60,
+    "titulo_post": 465, "titulo_story": 763
+  },
+  "Gestion-Comercial-y-Ventas": {
+    "ancho": 4380, "alto": 2739,
+    "pelo": 0.145, "menton": 0.42, "cara_x": 0.61,
+    "titulo_post": 465, "titulo_story": 678
+  },
+  "Operaciones-Portuarias": {
+    "ancho": 6000, "alto": 4000,
+    "pelo": 0.265, "menton": 0.43, "cara_x": 0.62,
+    "titulo_post": 465, "titulo_story": 678
+  }
+}

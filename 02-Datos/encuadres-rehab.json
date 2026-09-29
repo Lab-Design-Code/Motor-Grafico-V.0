@@ -1,0 +1,21 @@
+{
+  "Rehabilitacion-de-Dependencia-de-Drogas": {
+    "expandir_lados_post": 0.8,
+    "expandir_arriba_post": 0.32,
+    "expandir_abajo_post": 0.68,
+    "focal_post": [
+      0.55,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.14,
+    "expandir_abajo_story": 0.36,
+    "focal_story": [
+      0.59,
+      0,
+      0.6759,
+      0
+    ]
+  }
+}

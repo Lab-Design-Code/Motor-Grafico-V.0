@@ -1,0 +1,89 @@
+{
+  "Psicopedagogia": {
+    "expandir_lados_post": 1.5,
+    "expandir_arriba_post": 0.32,
+    "expandir_abajo_post": 0.72,
+    "focal_post": [
+      0.4,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_lados_story": 0.45,
+    "expandir_arriba_story": 0.2,
+    "expandir_abajo_story": 0.68,
+    "focal_story": [
+      0.3276,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Educacion-Diferencial": {
+    "expandir_lados_post": 0.35,
+    "expandir_arriba_post": 0.24,
+    "expandir_abajo_post": 0.32,
+    "focal_post": [
+      0.4556,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.16,
+    "expandir_abajo_story": 0.28,
+    "focal_story": [
+      0.44,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Educacion-Parvularia": {
+    "expandir_arriba_post": 0.16,
+    "expandir_abajo_post": 0.06,
+    "focal_post": [
+      0.48,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.12,
+    "expandir_abajo_story": 0.04,
+    "focal_story": [
+      0.48,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Trabajo-Social": {},
+  "Educacion-Basica": {
+    "expandir_lados_post": 0.45,
+    "expandir_arriba_post": 0.16,
+    "expandir_abajo_post": 0.38,
+    "focal_post": [
+      0.4862,
+      1,
+      0.7222,
+      1
+    ],
+    "expandir_arriba_story": 0.1,
+    "expandir_abajo_story": 0.36,
+    "focal_story": [
+      0.48,
+      0,
+      0.6759,
+      0
+    ]
+  },
+  "Educacion-Basica-y-Parvularia": {
+    "expandir_arriba_story": 0.3,
+    "expandir_abajo_story": 0.66,
+    "focal_story": [
+      0.52,
+      0,
+      0.6759,
+      0
+    ]
+  }
+}

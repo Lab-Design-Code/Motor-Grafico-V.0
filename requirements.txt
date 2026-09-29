@@ -1,0 +1,5 @@
+pillow>=10
+fonttools>=4.40
+numpy>=1.26
+opencv-python>=4.8
+python-docx>=1.1
