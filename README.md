@@ -10,6 +10,27 @@ Hoy son **43 carreras, 83 piezas y 166 gráficas** por versión.
 > La documentación completa está en español en [`LEEME.md`](LEEME.md). Este
 > archivo sólo resume cómo poner el motor en marcha en otra máquina.
 
+## Cómo empezar
+
+Necesitas una IA que trabaje en tu computador (Claude Code, Cursor o Copilot en
+modo agente) y acceso a este repositorio.
+
+1. Conecta tu IA a tu cuenta de GitHub.
+2. Pégale esto:
+
+   ```text
+   Instala el Motor Gráfico desde https://github.com/Lab-Design-Code/Motor-Grafico-AG siguiendo su archivo INSTALAR.md.
+   ```
+
+3. Cuando te lo pida, entrégale tus plantillas (Post y Story), tu base de datos
+   de carreras (presencial u online) y las fotos: selecciona una carpeta propia
+   o indícale un banco de imágenes (por ejemplo, Shutterstock) para que te
+   recomiende imágenes o las descargue.
+4. Pídele las gráficas, por ejemplo: «Genera las gráficas de Enfermería».
+5. Revisa las piezas en la carpeta que te indique.
+
+Las instrucciones técnicas que sigue la IA están en [`INSTALAR.md`](INSTALAR.md).
+
 ## Qué incluye el repositorio y qué no
 
 La carpeta de trabajo pesa unos 5 GB. Casi todo eso son fotografías
@@ -28,8 +49,8 @@ repositorio pesa unos pocos MB.
 ## Puesta en marcha
 
 ```bash
-git clone https://github.com/Lab-Design-Code/Motor-Grafico-MT.git
-cd Motor-Grafico-MT
+git clone https://github.com/Lab-Design-Code/Motor-Grafico-AG.git
+cd Motor-Grafico-AG
 pip install -r requirements.txt
 ```
 
@@ -39,7 +60,7 @@ Además necesitas:
 |---|---|
 | **Python 3.10 o superior** | |
 | **Inkscape 1.x** | en el `PATH`, en la ruta estándar de Windows, o en la variable `INKSCAPE` |
-| **Montserrat** Black, ExtraBold y Medium | instalada en el sistema, copiada en [`fuentes/`](fuentes/LEEME.md), o en la variable `IPG_FUENTES` |
+| **Montserrat** Black, ExtraBold y Medium | archivos `.otf` **instalados en el sistema**: Inkscape dibuja el texto con las fuentes del sistema (ver [`fuentes/`](fuentes/LEEME.md)) |
 | **Fotografías** | una por carrera en `03-Fotografias/<Escuela>/<Carrera>/<Carrera>.jpg` |
 | **Conector de Adobe (Firefly)** | sólo para expandir fotografías nuevas |
 
@@ -77,7 +98,7 @@ Lo que hace cada script está en [`00-Scripts/LEEME.md`](00-Scripts/LEEME.md).
 03-Fotografias/      <Escuela>/<Carrera>/<Carrera>.jpg   (vacía en el repo)
   _generadas/        fotos ya expandidas; es lo que consume el generador
 06-Documentacion/    manual .docx
-fuentes/             Montserrat, si no está instalada en el sistema
+fuentes/             Montserrat .otf para medir títulos (opcional)
 Gráficas Meta 2027/  salida, una carpeta por versión     (vacía en el repo)
 Zonas seguras/       mapas de zonas                      (vacía en el repo)
 ```
