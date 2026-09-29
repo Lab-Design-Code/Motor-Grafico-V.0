@@ -21,7 +21,7 @@ cualquiera de ellas.
 2. Pégale esto:
 
    ```text
-   Instala el Motor Gráfico desde https://github.com/Lab-Design-Code/Motor-Grafico-AG siguiendo su archivo INSTALAR.md.
+   Instala el Motor Gráfico desde https://github.com/Lab-Design-Code/Motor-Grafico-V.0 siguiendo su archivo INSTALAR.md.
    ```
 
 3. Cuando te lo pida, entrégale tus plantillas (Post y Story), tu base de datos
@@ -51,8 +51,8 @@ repositorio pesa unos pocos MB.
 ## Puesta en marcha
 
 ```bash
-git clone https://github.com/Lab-Design-Code/Motor-Grafico-AG.git
-cd Motor-Grafico-AG
+git clone https://github.com/Lab-Design-Code/Motor-Grafico-V.0.git
+cd Motor-Grafico-V.0
 pip install -r requirements.txt
 ```
 

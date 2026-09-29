@@ -28,7 +28,7 @@ máquina o con otra persona, empieza acá.
 pip install -r requirements.txt
 ```
 
-El código está en GitHub, en `Lab-Design-Code/Motor-Grafico-MT`, sin fotografías
+El código está en GitHub, en `Lab-Design-Code/Motor-Grafico-V.0`, sin fotografías
 ni gráficas (ver `.gitignore`). Los scripts calculan la raíz del repositorio a
 partir de su propia ubicación, así que se puede clonar en cualquier carpeta.
 

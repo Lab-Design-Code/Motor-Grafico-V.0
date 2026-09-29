@@ -11,7 +11,7 @@ y resuelve lo que falle antes de seguir. Está pensado para Windows.
    terminal nueva.
 2. `git config --global core.longpaths true`. Sin esto el clon falla con
    *Filename too long*.
-3. Deja el repositorio en `C:\Motor-Grafico-AG`. Una ruta más profunda supera
+3. Deja el repositorio en `C:\Motor-Grafico-V.0`. Una ruta más profunda supera
    los 260 caracteres de Windows e Inkscape no escribe los PNG.
 4. `python -m pip install -r requirements.txt`
 5. Descarga `Montserrat-Black.otf`, `Montserrat-ExtraBold.otf` y
