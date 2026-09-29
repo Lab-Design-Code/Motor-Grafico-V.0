@@ -1,9 +1,9 @@
 {
   "escuela": "Escuela de Gestion, Negocios y Maritima",
   "_notas": [
-    "Fuente: 'Documento Admisión 2027 (1).xlsx', hojas 'OA Presencial' (descuento 0,4) y 'OA Online 27' (descuento 0,5).",
+    "Fuente: base de datos de admisión de la institución (no se versiona).",
     "Las filas con código 'NUEVA EN SEDE' no traen prefijo de sede: se asignan por el bloque del Excel donde están (Administración de Empresas PC y Contabilidad General en La Unión, Contador Auditor PC en Panguipulli).",
-    "Redondeo de cuota a la decena: 82.916,67 -> 82.920 y 70.833,33 -> 70.830.",
+    "Redondeo de cuota: a la decena.",
     "Los niveles de una misma disciplina se agrupan en una gráfica con badges (RN-14), como el arte original de Gestión Logística: Técnico, Profesional y Plan Continuidad conviven bajo el prefijo del nivel superior."
   ],
   "_supuestos_a_confirmar": [
@@ -19,8 +19,6 @@
       "badges": [
         "Título Profesional"
       ],
-      "beca": 40,
-      "cuota": 84500,
       "sede": "Sede Arauco",
       "_codigo": "AR06049",
       "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Empresas/Administracion-de-Empresas.jpg",
@@ -52,8 +50,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 84500,
       "sede": "Sede Concepción",
       "_codigo": "CC06049 + CC06045",
       "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Empresas/Administracion-de-Empresas.jpg",
@@ -85,8 +81,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 84500,
       "sede": "Sede La Unión",
       "_codigo": "LU06049 + NUEVA EN SEDE",
       "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Empresas/Administracion-de-Empresas.jpg",
@@ -117,8 +111,6 @@
       "badges": [
         "Título Profesional"
       ],
-      "beca": 40,
-      "cuota": 84500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG06045",
       "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Empresas/Administracion-de-Empresas.jpg",
@@ -151,8 +143,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV06046 + CV06049 + CV06045",
       "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Empresas/Administracion-de-Empresas.jpg",
@@ -183,8 +173,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 119500,
       "sede": "Sede Concepción",
       "_codigo": "CC08011",
       "foto": "Escuela de Gestion, Negocios y Maritima/Maquinaria-Naval/Maquinaria-Naval.jpg",
@@ -213,8 +201,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 119500,
       "sede": "Sede Concepción",
       "_codigo": "CC08010",
       "foto": "Escuela de Gestion, Negocios y Maritima/Transporte-Maritimo/Transporte-Maritimo.jpg",
@@ -245,8 +231,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 100000,
       "sede": "Sede La Unión",
       "_codigo": "NUEVA EN SEDE",
       "foto": "Escuela de Gestion, Negocios y Maritima/Contabilidad-General/Contabilidad-General.jpg",
@@ -277,8 +261,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV06003ONL",
       "foto": "Escuela de Gestion, Negocios y Maritima/Contabilidad-General/Contabilidad-General.jpg",
@@ -309,8 +291,6 @@
       "badges": [
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 100000,
       "sede": "Sede Panguipulli",
       "_codigo": "NUEVA EN SEDE",
       "foto": "Escuela de Gestion, Negocios y Maritima/Contador-Auditor/Contador-Auditor.jpg",
@@ -341,8 +321,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV06055ONL + CV06065ONL",
       "foto": "Escuela de Gestion, Negocios y Maritima/Contador-Auditor/Contador-Auditor.jpg",
@@ -374,8 +352,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV06038 + CV06051 + CV06062",
       "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-Publica/Administracion-Publica.jpg",
@@ -405,8 +381,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV06048ONL",
       "foto": "Escuela de Gestion, Negocios y Maritima/Administracion-de-Recursos-Humanos/Administracion-de-Recursos-Humanos.jpg",
@@ -438,8 +412,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV06023 + CV06044 + CV06043",
       "foto": "Escuela de Gestion, Negocios y Maritima/Gestion-Logistica/Gestion-Logistica.jpg",
@@ -469,8 +441,6 @@
       "badges": [
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "foto": "Escuela de Gestion, Negocios y Maritima/Gestion-Logistica-Portuaria/Gestion-Logistica-Portuaria.jpg",
@@ -502,8 +472,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 70830,
       "sede": "Sede Online",
       "_codigo": "CV06037 + CV06069 + CV06070",
       "foto": "Escuela de Gestion, Negocios y Maritima/Marketing-Digital/Marketing-Digital.jpg",
@@ -532,8 +500,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 78750,
       "sede": "Sede Online",
       "_codigo": "CV06042ONL",
       "foto": "Escuela de Gestion, Negocios y Maritima/Comercio-Exterior/Comercio-Exterior.jpg",
@@ -561,8 +527,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "foto": "Escuela de Gestion, Negocios y Maritima/Gestion-Comercial-y-Ventas/Gestion-Comercial-y-Ventas.jpg",
@@ -591,8 +555,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV08013ONL",
       "foto": "Escuela de Gestion, Negocios y Maritima/Operaciones-Portuarias/Operaciones-Portuarias.jpg",

@@ -220,8 +220,6 @@ Entrada: un JSON por carrera. Salida: `Post-…svg` y `Story-…svg`.
   "prefijo": "Técnico de Nivel Superior en",
   "nombre": "EDUCACIÓN PARVULARIA",
   "badges": ["Título Técnico"],
-  "beca": 40,
-  "cuota": 89500,
   "sede": "Sede Arauco"
 }
 ```
@@ -298,7 +296,7 @@ contra los márgenes. Así se detectó el desborde del Story.
 en las cuatro escuelas; sigue faltando el visto bueno formal de Marketing sobre
 los puntos 3, 4 y 6.*
 
-1. **Hoja fuente:** `OA Presencial` (descuento 0,4) y `OA Online 27` (0,5). La hoja
+1. **Hoja fuente:** `OA Presencial` y `OA Online 27`, cada una con su columna de descuento. La hoja
    `OA 2027` se descarta: no trae descuento ni cuota.
 2. **Unidad de réplica:** una gráfica por carrera + sede, agrupando los tipos de
    título. Es lo que explica que la plantilla de Gestión Logística muestre tres
@@ -323,7 +321,7 @@ Al 21-09-2026 la campaña está entregada: 4 escuelas, 43 carreras, 83 piezas,
 | Pendiente de origen | Cómo cerró |
 |---|---|
 | Las fotografías | **Resuelto.** Una foto por carrera, en resolución máxima, compartida por todas sus sedes. 43 archivos en `03-Fotografias/<Escuela>/<Carrera>/` |
-| Regla de redondeo de la cuota | **Resuelto, pero distinto de lo propuesto acá.** No se trunca al millar: se redondea **a la decena**. Se dedujo del post de Ingeniería en Minas online, que muestra $82.920 para un cálculo de $82.916,67 |
+| Regla de redondeo de la cuota | **Resuelto, pero distinto de lo propuesto acá.** No se trunca al millar: se redondea **a la decena**. |
 | ¿Foto por carrera o por escuela? | **Por carrera.** Cambia la pastilla de sede, no la imagen |
 | ¿Tríptico de tres paneles o foto única? | **Foto única a sangre.** Los `clipPath` de §3.4 quedaron sin uso |
 | ¿Una gráfica por carrera+sede con jornadas distintas? | **Sí, agrupadas.** La plantilla no muestra jornada. Cuando las cuotas difieren se usa la menor, porque dice «Cuotas desde» |

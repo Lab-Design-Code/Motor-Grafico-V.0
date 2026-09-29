@@ -1,9 +1,9 @@
 {
   "escuela": "Escuela de Ingenieria y Tecnologia",
   "_notas": [
-    "Fuente: 'Documento Admisión 2027 (1).xlsx', hojas 'OA Presencial' (descuento 0,4) y 'OA Online 27' (descuento 0,5).",
+    "Fuente: base de datos de admisión de la institución (no se versiona).",
     "Las filas 'NUEVA EN SEDE' se asignan por el bloque del Excel donde están.",
-    "Redondeo de cuota a la decena: 82.916,67 -> 82.920.",
+    "Redondeo de cuota: a la decena.",
     "Los niveles de una misma disciplina se agrupan en badges bajo el prefijo del nivel superior (RN-14).",
     "Cuando hay varios niveles con cuota distinta se toma la menor, porque la plantilla dice 'Cuotas desde' (RN-16)."
   ],
@@ -22,8 +22,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Arauco",
       "_codigo": "AR04022 + AR04005",
       "foto": "Escuela de Ingenieria y Tecnologia/Construccion-Civil/Construccion-Civil.jpg",
@@ -55,8 +53,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 84500,
       "sede": "Sede Concepción",
       "_codigo": "CC04022 + CC04005",
       "foto": "Escuela de Ingenieria y Tecnologia/Construccion-Civil/Construccion-Civil.jpg",
@@ -88,8 +84,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 99500,
       "sede": "Sede La Unión",
       "_codigo": "LU04022 + NUEVA EN SEDE",
       "foto": "Escuela de Ingenieria y Tecnologia/Construccion-Civil/Construccion-Civil.jpg",
@@ -120,8 +114,6 @@
       "badges": [
         "Título Profesional"
       ],
-      "beca": 40,
-      "cuota": 99500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG04022",
       "foto": "Escuela de Ingenieria y Tecnologia/Construccion-Civil/Construccion-Civil.jpg",
@@ -152,8 +144,6 @@
       "badges": [
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "foto": "Escuela de Ingenieria y Tecnologia/Construccion-Civil/Construccion-Civil.jpg",
@@ -185,8 +175,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 100000,
       "sede": "Sede Arauco",
       "_codigo": "NUEVA EN SEDE",
       "foto": "Escuela de Ingenieria y Tecnologia/Ingenieria-Industrial/Ingenieria-Industrial.jpg",
@@ -217,8 +205,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 95000,
       "sede": "Sede Concepción",
       "_codigo": "NUEVA EN SEDE",
       "foto": "Escuela de Ingenieria y Tecnologia/Ingenieria-Industrial/Ingenieria-Industrial.jpg",
@@ -249,8 +235,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV04032 + CV04034",
       "foto": "Escuela de Ingenieria y Tecnologia/Ingenieria-Industrial/Ingenieria-Industrial.jpg",
@@ -280,8 +264,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 100000,
       "sede": "Sede La Unión",
       "_codigo": "NUEVA EN SEDE",
       "foto": "Escuela de Ingenieria y Tecnologia/Electricidad/Electricidad.jpg",
@@ -311,8 +293,6 @@
       "badges": [
         "Título Profesional"
       ],
-      "beca": 40,
-      "cuota": 99500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG03003",
       "foto": "Escuela de Ingenieria y Tecnologia/Electricidad/Electricidad.jpg",
@@ -344,8 +324,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV03004 + CV03003 + CV03028",
       "foto": "Escuela de Ingenieria y Tecnologia/Electricidad/Electricidad.jpg",
@@ -375,8 +353,6 @@
       "badges": [
         "Título Profesional"
       ],
-      "beca": 40,
-      "cuota": 99500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG04024",
       "foto": "Escuela de Ingenieria y Tecnologia/Prevencion-de-Riesgos/Prevencion-de-Riesgos.jpg",
@@ -409,8 +385,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV04003 + CV04024 + CV04025",
       "foto": "Escuela de Ingenieria y Tecnologia/Prevencion-de-Riesgos/Prevencion-de-Riesgos.jpg",
@@ -443,8 +417,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV04030 + CV04031 + CV04033",
       "foto": "Escuela de Ingenieria y Tecnologia/Automatizacion-y-Control-Industrial/Automatizacion-y-Control-Industrial.jpg",
@@ -477,8 +449,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV03017 + CV03023 + CV03025",
       "foto": "Escuela de Ingenieria y Tecnologia/Ciberseguridad/Ciberseguridad.jpg",
@@ -510,8 +480,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV03021 + CV03022 + CV03024",
       "foto": "Escuela de Ingenieria y Tecnologia/Ciencia-de-Datos/Ciencia-de-Datos.jpg",
@@ -543,8 +511,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV04035 + CV04036 + CV04037",
       "foto": "Escuela de Ingenieria y Tecnologia/Gestion-de-Seguridad-y-Vigilancia-Privada/Gestion-de-Seguridad-y-Vigilancia-Privada.jpg",
@@ -576,8 +542,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV03020 + CV03026",
       "foto": "Escuela de Ingenieria y Tecnologia/Informatica/Informatica.jpg",
@@ -606,8 +570,6 @@
       "badges": [
         "Doble Titulación"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "foto": "Escuela de Ingenieria y Tecnologia/Informatica-y-Ciberseguridad/Informatica-y-Ciberseguridad.jpg",
@@ -638,8 +600,6 @@
       "badges": [
         "Título Profesional"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "foto": "Escuela de Ingenieria y Tecnologia/Inteligencia-Artificial/Inteligencia-Artificial.jpg",
@@ -669,8 +629,6 @@
       "badges": [
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "foto": "Escuela de Ingenieria y Tecnologia/Mantenimiento-Industrial/Mantenimiento-Industrial.jpg",
@@ -702,8 +660,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV04038 + CV04018",
       "foto": "Escuela de Ingenieria y Tecnologia/Minas/Minas.jpg",
@@ -735,8 +691,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 78750,
       "sede": "Sede Online",
       "_codigo": "CV04040 + CV04039 + CV04045",
       "foto": "Escuela de Ingenieria y Tecnologia/Operaciones-de-Planta-Minera/Operaciones-de-Planta-Minera.jpg",
@@ -767,8 +721,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "foto": "Escuela de Ingenieria y Tecnologia/Instrumentacion-Industrial/Instrumentacion-Industrial.jpg",
@@ -796,8 +748,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV04021ONL",
       "foto": "Escuela de Ingenieria y Tecnologia/Procesos-Industriales/Procesos-Industriales.jpg",
@@ -826,8 +776,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV04041ONL",
       "foto": "Escuela de Ingenieria y Tecnologia/Procesos-Mineros/Procesos-Mineros.jpg",
@@ -857,8 +805,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV03019ONL",
       "foto": "Escuela de Ingenieria y Tecnologia/Programacion/Programacion.jpg",

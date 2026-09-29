@@ -120,13 +120,13 @@ el mismo comando la reemplaza.
 Son decisiones de IPG. Están acá porque explican por qué dos piezas de la misma
 carrera muestran cifras distintas.
 
-- **Cuota.** Se redondea **a la decena** — se dedujo del post de Ingeniería en
-  Minas online, que muestra $82.920 para un cálculo de $82.916,67. Cuando la
-  jornada diurna y la vespertina difieren se usa **la menor**, porque la
-  plantilla dice «Cuotas desde»: afecta a Enfermería en Arauco y La Unión
-  ($110.000 frente a $115.000). Panguipulli sólo tiene vespertina, así que queda
-  en $115.000.
-- **Beca.** 40 % en presencial y 50 % en online, de la columna de descuento.
+- **Precios.** La cuota y la beca no se versionan: cada institución las carga
+  desde su propia base de datos. Sin ellas, la pieza sale con «$00.000» y
+  «DE HASTA 00%».
+- **Cuota.** Se redondea **a la decena**. Cuando la jornada diurna y la
+  vespertina difieren se usa **la menor**, porque la plantilla dice «Cuotas
+  desde».
+- **Beca.** Sale de la columna de descuento de la base de datos.
 - **Sede.** Del prefijo del código de carrera: AR Arauco, CC Concepción, LU La
   Unión, PG Panguipulli. Online sale de la hoja virtual.
 - **Nombres.** El Excel viene sin tildes y con nomenclatura administrativa

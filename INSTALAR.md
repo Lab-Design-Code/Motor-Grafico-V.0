@@ -26,7 +26,9 @@ y resuelve lo que falle antes de seguir. Está pensado para Windows.
    - **Base de datos** de carreras, presencial u online: la aporta cada
      institución y no viene en el repositorio. Guarda el archivo original en
      `02-Datos/` (queda fuera de git) y tradúcelo a `02-Datos/escuela-*.json`
-     con el formato descrito en `LEEME.md`.
+     con el formato descrito en `LEEME.md`. El repositorio no trae precios:
+     agrega a cada carrera sus campos `"beca"` y `"cuota"` desde esa base
+     de datos. Si faltan, la pieza sale con «DE HASTA 00%» y «$00.000».
    - **Fotografías**, de una de dos formas:
      - **Una carpeta propia**: si trae fotos ya expandidas (`_generadas`),
        cópiala a `03-Fotografias/_generadas/`; si son fotos originales, pásalas
@@ -43,7 +45,8 @@ y resuelve lo que falle antes de seguir. Está pensado para Windows.
 7. Prueba: `python 00-Scripts\generar_v3.py escuela-salud.json Enfermeria`.
    Debe imprimir cuatro `ok` y `8 graficas`. Comprueba que los 8 PNG existan en
    `Gráficas Meta 2027\V.3\Escuela de Salud\Enfermeria\` (Inkscape puede fallar
-   sin avisar) y muéstrale uno a la persona.
+   sin avisar) y muéstrale uno a la persona. Mientras no se cargue la base de
+   datos, la beca y la cuota salen como «00%» y «$00.000»: es lo esperado.
 
 ## Expandir fotos nuevas: conector de Adobe (Firefly)
 

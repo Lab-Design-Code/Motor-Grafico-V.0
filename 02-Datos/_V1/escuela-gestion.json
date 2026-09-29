@@ -1,9 +1,9 @@
 {
   "escuela": "Escuela de Gestion, Negocios y Maritima",
   "_notas": [
-    "Fuente: 'Documento Admisión 2027 (1).xlsx', hojas 'OA Presencial' (descuento 0,4) y 'OA Online 27' (descuento 0,5).",
+    "Fuente: base de datos de admisión de la institución (no se versiona).",
     "Las filas con código 'NUEVA EN SEDE' no traen prefijo de sede: se asignan por el bloque del Excel donde están (Administración de Empresas PC y Contabilidad General en La Unión, Contador Auditor PC en Panguipulli).",
-    "Redondeo de cuota a la decena: 82.916,67 -> 82.920 y 70.833,33 -> 70.830.",
+    "Redondeo de cuota: a la decena.",
     "Los niveles de una misma disciplina se agrupan en una gráfica con badges (RN-14), como el arte original de Gestión Logística: Técnico, Profesional y Plan Continuidad conviven bajo el prefijo del nivel superior."
   ],
   "_supuestos_a_confirmar": [
@@ -19,8 +19,6 @@
       "badges": [
         "Título Profesional"
       ],
-      "beca": 40,
-      "cuota": 84500,
       "sede": "Sede Arauco",
       "_codigo": "AR06049",
       "expandir_lados_post": 0.3,
@@ -51,8 +49,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 84500,
       "sede": "Sede Concepción",
       "_codigo": "CC06049 + CC06045",
       "expandir_lados_post": 0.3,
@@ -83,8 +79,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 84500,
       "sede": "Sede La Unión",
       "_codigo": "LU06049 + NUEVA EN SEDE",
       "expandir_lados_post": 0.3,
@@ -114,8 +108,6 @@
       "badges": [
         "Título Profesional"
       ],
-      "beca": 40,
-      "cuota": 84500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG06045",
       "expandir_lados_post": 0.3,
@@ -147,8 +139,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV06046 + CV06049 + CV06045",
       "expandir_lados_post": 0.3,
@@ -178,8 +168,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 119500,
       "sede": "Sede Concepción",
       "_codigo": "CC08011",
       "expandir_lados_post": 0.95,
@@ -210,8 +198,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 119500,
       "sede": "Sede Concepción",
       "_codigo": "CC08010",
       "expandir_arriba_post": 0.02,
@@ -239,8 +225,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 100000,
       "sede": "Sede La Unión",
       "_codigo": "NUEVA EN SEDE",
       "expandir_lados_post": 0.35,
@@ -270,8 +254,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV06003ONL",
       "expandir_lados_post": 0.35,
@@ -301,8 +283,6 @@
       "badges": [
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 100000,
       "sede": "Sede Panguipulli",
       "_codigo": "NUEVA EN SEDE",
       "expandir_lados_post": 0.35,
@@ -333,8 +313,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV06055ONL + CV06065ONL",
       "expandir_lados_post": 0.35,
@@ -366,8 +344,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV06038 + CV06051 + CV06062",
       "expandir_lados_post": 0.7,
@@ -396,8 +372,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV06048ONL",
       "expandir_lados_post": 0.65,
@@ -429,8 +403,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV06023 + CV06044 + CV06043",
       "expandir_arriba_post": 0.1,
@@ -459,8 +431,6 @@
       "badges": [
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "expandir_arriba_post": 0.08,
@@ -491,8 +461,6 @@
         "Título Profesional",
         "Plan Continuidad"
       ],
-      "beca": 50,
-      "cuota": 70830,
       "sede": "Sede Online",
       "_codigo": "CV06037 + CV06069 + CV06070",
       "expandir_lados_post": 0.55,
@@ -522,8 +490,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 78750,
       "sede": "Sede Online",
       "_codigo": "CV06042ONL",
       "expandir_arriba_post": 0.18,
@@ -552,8 +518,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "expandir_lados_post": 0.1,
@@ -583,8 +547,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV08013ONL",
       "expandir_abajo_post": 0.18,

@@ -1,10 +1,10 @@
 {
   "escuela": "Escuela de Educacion y Desarrollo Social",
   "_notas": [
-    "Fuente: 'Documento Admisión 2027 (1).xlsx', hojas 'OA Presencial' (descuento 0,4) y 'OA Online 27' (descuento 0,5).",
+    "Fuente: base de datos de admisión de la institución (no se versiona).",
     "Unidad de réplica: una gráfica por carrera + sede, agrupando jornadas y tipos de título en badges (RN-14).",
     "Sede deducida del prefijo del código: AR=Arauco, CC=Concepción, LU=La Unión, PG=Panguipulli; online = Sede Online.",
-    "Redondeo de cuota: a la decena. Se dedujo del post de Ingeniería en Minas online, que muestra $82.920 para un cálculo de 82.916,67.",
+    "Redondeo de cuota: a la decena.",
     "Psicopedagogía Concepción y Online agrupan Plan Continuidad y Profesional en dos badges, porque ambas existen en esa sede."
   ],
   "_supuestos_a_confirmar": [
@@ -20,8 +20,6 @@
       "badges": [
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Arauco",
       "_codigo": "AR02013",
       "expandir_lados_post": 1.15,
@@ -53,8 +51,6 @@
         "Plan Continuidad",
         "Título Profesional"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Concepción",
       "_codigo": "CC02013 + CC02017",
       "expandir_lados_post": 1.15,
@@ -85,8 +81,6 @@
       "badges": [
         "Plan Continuidad"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG02013",
       "expandir_lados_post": 1.15,
@@ -118,8 +112,6 @@
         "Plan Continuidad",
         "Título Profesional"
       ],
-      "beca": 50,
-      "cuota": 82920,
       "sede": "Sede Online",
       "_codigo": "CV02013ONL + CV02017ONL",
       "expandir_lados_post": 1.15,
@@ -150,8 +142,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Arauco",
       "_codigo": "AR02002",
       "expandir_lados_post": 0.15,
@@ -181,8 +171,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Concepción",
       "_codigo": "CC02002",
       "expandir_lados_post": 0.15,
@@ -212,8 +200,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede La Unión",
       "_codigo": "LU02002",
       "expandir_lados_post": 0.15,
@@ -243,8 +229,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG02002",
       "expandir_lados_post": 0.15,
@@ -274,8 +258,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 78750,
       "sede": "Sede Online",
       "_codigo": "CV02002ONL",
       "expandir_lados_post": 0.15,
@@ -305,8 +287,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Arauco",
       "_codigo": "AR02001",
       "expandir_arriba_post": 0.16,
@@ -333,8 +313,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Concepción",
       "_codigo": "CC02001",
       "expandir_arriba_post": 0.16,
@@ -361,8 +339,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede La Unión",
       "_codigo": "LU02001",
       "expandir_arriba_post": 0.16,
@@ -389,8 +365,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG02001",
       "expandir_arriba_post": 0.16,
@@ -417,8 +391,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 78750,
       "sede": "Sede Online",
       "_codigo": "CV02001ONL",
       "expandir_arriba_post": 0.16,
@@ -445,8 +417,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Arauco",
       "_codigo": "AR02016",
       "expandir_lados_post": 1.1,
@@ -477,8 +447,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Concepción",
       "_codigo": "CC02016",
       "expandir_lados_post": 1.1,
@@ -509,8 +477,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede La Unión",
       "_codigo": "LU02016",
       "expandir_lados_post": 1.1,
@@ -541,8 +507,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG02016",
       "expandir_lados_post": 1.1,
@@ -573,8 +537,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 78750,
       "sede": "Sede Online",
       "_codigo": "CV02016ONL",
       "expandir_lados_post": 1.1,
@@ -605,8 +567,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Concepción",
       "_codigo": "CC06003",
       "expandir_lados_post": 0.25,
@@ -636,8 +596,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede La Unión",
       "_codigo": "LU06003",
       "expandir_lados_post": 0.25,
@@ -667,8 +625,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 78750,
       "sede": "Sede Online",
       "_codigo": "CV02014ONL",
       "expandir_lados_post": 0.25,
@@ -698,8 +654,6 @@
       "badges": [
         "Doble Titulación"
       ],
-      "beca": 50,
-      "cuota": 78750,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "expandir_lados_post": 0.6,

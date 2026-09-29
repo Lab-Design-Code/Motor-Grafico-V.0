@@ -1,7 +1,7 @@
 {
   "escuela": "Escuela de Salud",
   "_notas": [
-    "Fuente: 'Documento Admisión 2027 (1).xlsx', hojas 'OA Presencial' (descuento 0,4) y 'OA Online 27' (descuento 0,5).",
+    "Fuente: base de datos de admisión de la institución (no se versiona).",
     "Unidad de réplica: una gráfica por carrera + sede, agrupando jornadas.",
     "Cuando diurna y vespertina tienen cuota distinta se usa la menor, porque la plantilla dice 'Cuotas desde'.",
     "Sede deducida del prefijo del código: AR=Arauco, CC=Concepción, LU=La Unión, PG=Panguipulli; online = Sede Online."
@@ -15,8 +15,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 110000,
       "sede": "Sede Arauco",
       "_codigo": "AR01001",
       "foto": "Escuela de Salud/Enfermeria/Enfermeria.jpg",
@@ -47,8 +45,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 110000,
       "sede": "Sede Concepción",
       "_codigo": "CC01001",
       "foto": "Escuela de Salud/Enfermeria/Enfermeria.jpg",
@@ -79,8 +75,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 110000,
       "sede": "Sede La Unión",
       "_codigo": "LU01001",
       "foto": "Escuela de Salud/Enfermeria/Enfermeria.jpg",
@@ -111,8 +105,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 115000,
       "sede": "Sede Panguipulli",
       "_codigo": "PG01001",
       "foto": "Escuela de Salud/Enfermeria/Enfermeria.jpg",
@@ -143,8 +135,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Arauco",
       "_codigo": "AR01005",
       "foto": "Escuela de Salud/Estetica-Integral/Estetica-Integral.jpg",
@@ -175,8 +165,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Concepción",
       "_codigo": "CC01005",
       "foto": "Escuela de Salud/Estetica-Integral/Estetica-Integral.jpg",
@@ -207,8 +195,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG01015",
       "foto": "Escuela de Salud/Estetica-Integral/Estetica-Integral.jpg",
@@ -239,8 +225,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Arauco",
       "_codigo": "AR01013",
       "foto": "Escuela de Salud/Podologia/Podologia.jpg",
@@ -272,8 +256,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Concepción",
       "_codigo": "CC01013",
       "foto": "Escuela de Salud/Podologia/Podologia.jpg",
@@ -305,8 +287,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede La Unión",
       "_codigo": "LU01013",
       "foto": "Escuela de Salud/Podologia/Podologia.jpg",
@@ -338,8 +318,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 40,
-      "cuota": 89500,
       "sede": "Sede Panguipulli",
       "_codigo": "PG01013",
       "foto": "Escuela de Salud/Podologia/Podologia.jpg",
@@ -371,8 +349,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "foto": "Escuela de Salud/Administracion-de-Centros-de-Salud/Administracion-de-Centros-de-Salud.jpg",
@@ -404,8 +380,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "CV01013ONL",
       "foto": "Escuela de Salud/Rehabilitacion-de-Dependencia-de-Drogas/Rehabilitacion-de-Dependencia-de-Drogas.jpg",
@@ -438,8 +412,6 @@
       "badges": [
         "Título Técnico"
       ],
-      "beca": 50,
-      "cuota": 87500,
       "sede": "Sede Online",
       "_codigo": "NUEVA",
       "foto": "Escuela de Salud/Farmacias/Farmacias.jpg",

@@ -209,9 +209,7 @@ bullet("La regla del 0,30 (RN-28): el rostro no puede ocupar más de ~30 % del "
        "alto de la fotografía. Seis fotos a lo largo del proyecto hubo que "
        "reemplazarlas por esto, y es una condición de selección, no de "
        "calibración.")
-bullet("La regla de redondeo quedó resuelta (RN-29): a la decena. Se dedujo "
-       "del post de Ingeniería en Minas, que muestra $82.920 para un cálculo "
-       "de $82.916,67.")
+bullet("La regla de redondeo quedó resuelta (RN-29): a la decena.")
 bullet("Tres scripts nuevos que aparecieron al escalar: asignación automática "
        "de rutas de foto, recogida de descargas en lote y hoja de contacto.")
 bullet("Se corrigió un bug del solver que escribía siempre el mismo nombre de "
@@ -397,8 +395,7 @@ tabla(["Código", "Regla", "Estado"],
         "título es de 190px sobre 1080, así que un primer plano no tiene "
         "solución a ninguna combinación de expansiones.",
         "Confirmada — 15-09-2026, seis fotos reemplazadas"],
-       ["RN-29", "Redondeo de la cuota mensual: a la decena. $82.916,67 → "
-        "$82.920 y $70.833,33 → $70.830.",
+       ["RN-29", "Redondeo de la cuota mensual: a la decena.",
         "Resuelta — deducida del post de Ingeniería en Minas"],
        ["RN-30", "Las filas del Excel con código «NUEVA» o «NUEVA EN SEDE» no "
         "traen prefijo de sede: se asignan por el bloque de sede donde están en "
@@ -620,8 +617,6 @@ code('      "slug": "Enfermeria-Panguipulli",')
 code('      "prefijo": "Técnico de Nivel Superior en",')
 code('      "nombre": "ENFERMERÍA",')
 code('      "badges": ["Título Técnico"],')
-code('      "beca": 40,')
-code('      "cuota": 115000,')
 code('      "sede": "Sede Panguipulli",')
 code('      "foto": "Escuela de Salud/Enfermeria/Enfermeria.jpg",')
 code('      "expandir_lados_post": 1.9,')

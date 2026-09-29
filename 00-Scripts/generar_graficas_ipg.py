@@ -326,12 +326,15 @@ def construir(cfg, d):
 
     # --- 5. beca % ---------------------------------------------------------
     bb = cfg["beca"]
-    svg = escribir(svg, run(svg, bb["y"]), "DE HASTA %d%%" % d["beca"],
+    # Sin beca en los datos queda un marcador: la cifra la aporta la institución
+    beca = d.get("beca")
+    txt_beca = "DE HASTA %d%%" % beca if beca is not None else "DE HASTA 00%"
+    svg = escribir(svg, run(svg, bb["y"]), txt_beca,
                    bb["cls"], bb["x"], bb["y"])
 
     # --- 6. cuota (centrada en la pastilla) --------------------------------
     c = cfg["cuota"]
-    txt = fmt_miles(d["cuota"])
+    txt = fmt_miles(d["cuota"]) if d.get("cuota") is not None else "$00.000"
     size_c = c["size"]
     p0, p1 = c["pill"]
     disp = (p1 - p0) - 40.0
