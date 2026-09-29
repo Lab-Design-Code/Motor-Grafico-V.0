@@ -13,7 +13,9 @@ Hoy son **43 carreras, 83 piezas y 166 gráficas** por versión.
 ## Cómo empezar
 
 Necesitas una IA que trabaje en tu computador (Claude Code, Cursor o Copilot en
-modo agente) y acceso a este repositorio.
+modo agente) y acceso a este repositorio. Para expandir fotos nuevas hace falta
+Claude con el conector de Adobe (Firefly); con fotos ya expandidas sirve
+cualquiera de ellas.
 
 1. Conecta tu IA a tu cuenta de GitHub.
 2. Pégale esto:

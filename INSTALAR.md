@@ -28,18 +28,42 @@ y resuelve lo que falle antes de seguir. Está pensado para Windows.
    - **Fotografías**, de una de dos formas:
      - **Una carpeta propia**: si trae fotos ya expandidas (`_generadas`),
        cópiala a `03-Fotografias/_generadas/`; si son fotos originales, pásalas
-       por el flujo de `LEEME.md` (medir, resolver el encuadre y expandir).
+       por el flujo de `LEEME.md` (medir, resolver el encuadre y expandir con el
+       conector de Adobe, ver más abajo).
      - **Un banco de imágenes** (por ejemplo Shutterstock): busca candidatas
        según el perfil de la carrera en `02-Datos/perfiles-fotograficos.json`,
        descarta las que no cumplan la regla del 0,30 con
        `00-Scripts/prevalidar_fotos.py` y recomiéndale las mejores con su
        enlace. Descarga sólo con su autorización: cada descarga consume una
        licencia, y la ficha debe decir «Descargas ilimitadas», sin aviso de uso
-       editorial. Después sigue el flujo de `LEEME.md`.
+       editorial. Después sigue el flujo de `LEEME.md`, que requiere el conector
+       de Adobe.
 7. Prueba: `python 00-Scripts\generar_v3.py escuela-salud.json Enfermeria`.
    Debe imprimir cuatro `ok` y `8 graficas`. Comprueba que los 8 PNG existan en
    `Gráficas Meta 2027\V.3\Escuela de Salud\Enfermeria\` (Inkscape puede fallar
    sin avisar) y muéstrale uno a la persona.
+
+## Expandir fotos nuevas: conector de Adobe (Firefly)
+
+Sólo hace falta cuando la persona trae fotos originales o las descarga de un
+banco. Con fotos ya expandidas (`_generadas`) no se usa.
+
+1. **Comprueba el conector.** Revisa si tienes disponibles las herramientas de
+   Adobe, como `image_generative_expand` y `asset_initialize_file_upload`.
+2. **Si no está, avísale.** Sin el conector sólo puedes trabajar con fotos ya
+   expandidas. No intentes expandir de otra forma: el método antiguo por
+   reflejo (`expandir_foto_*` en `capa_fotos_ipg.py`) duplicaba personas y
+   dejaba franjas. Ojo: `generar_v3.py` usa ese método solo si falta la foto
+   en `_generadas`, así que no generes una carrera sin su foto expandida.
+3. **Ofrece instalarlo tú.** Si tu entorno te deja agregar conectores o
+   servidores MCP, propónselo y hazlo con su autorización; ella tendrá que
+   iniciar sesión con su cuenta de Adobe. Si no puedes, explícale cómo: en
+   Claude, abre la configuración de **Conectores**, busca **Adobe**, pulsa
+   **Conectar** e inicia sesión con una cuenta de Adobe con acceso a Firefly.
+   Después hay que abrir una sesión nueva para que aparezcan las herramientas.
+
+Con el conector activo, la expansión sigue el paso 3.4 de `LEEME.md`: se sube
+la foto una vez y se expande dos, para Post y para Story.
 
 ## Generar gráficas
 
@@ -56,6 +80,7 @@ Sin carrera genera la escuela completa. La carrera se nombra con su campo
 | `Inkscape no escribio …png` | Ruta de más de 260 caracteres, o Inkscape fuera de su carpeta por defecto (variable `INKSCAPE`). |
 | Error con `Montserrat-…otf`, o título en otra tipografía | Fuentes `.otf` no instaladas en Windows. |
 | Error que menciona un `.jpg` | Falta la foto en `03-Fotografias/_generadas/`. |
+| No tienes herramientas de Adobe | Conector de Adobe no activo: ver «Expandir fotos nuevas». |
 
 El detalle de cada script y del encuadre está en [`LEEME.md`](LEEME.md) y
 [`00-Scripts/LEEME.md`](00-Scripts/LEEME.md).
