@@ -1,0 +1,217 @@
+LICENCIA DE SOFTWARE PROPIETARIO — TODOS LOS DERECHOS RESERVADOS
+PROPRIETARY SOFTWARE LICENSE — ALL RIGHTS RESERVED
+
+Copyright (c) 2026 Ariel Garay Pavez. Todos los derechos reservados.
+Copyright (c) 2026 Ariel Garay Pavez. All rights reserved.
+
+================================================================================
+ESPAÑOL
+================================================================================
+
+1. TITULARIDAD
+
+   Este repositorio y todo su contenido —incluidos el código fuente y objeto,
+   los scripts, las plantillas, las estructuras y archivos de datos, la
+   documentación, los flujos de trabajo, las instrucciones para agentes de
+   inteligencia artificial y cualquier obra derivada de ellos (en adelante,
+   el «Software»)— son obra de Ariel Garay Pavez (el «Titular»), quien es el
+   único titular de todos los derechos de propiedad intelectual sobre el
+   Software.
+
+   El Software está protegido por la Ley N° 17.336 sobre Propiedad
+   Intelectual de la República de Chile, por el Convenio de Berna para la
+   Protección de las Obras Literarias y Artísticas, por el Acuerdo sobre los
+   ADPIC y por las demás normas nacionales e internacionales aplicables.
+
+2. AUSENCIA DE LICENCIA
+
+   No se concede ninguna licencia ni derecho sobre el Software, ni expresa ni
+   implícitamente, por impedimento (estoppel) ni de ninguna otra forma. El
+   acceso al Software, su descarga o su visualización no otorgan derecho
+   alguno de uso, explotación o disposición.
+
+   Si este repositorio fuera o hubiera sido visible públicamente en GitHub,
+   esa visibilidad no constituye licencia. Los únicos derechos que pudieran
+   existir son los que los Términos de Servicio de GitHub imponen como mínimo
+   para ver y bifurcar («fork») el repositorio dentro de la plataforma
+   GitHub, y no autorizan ningún uso, copia fuera de GitHub, modificación,
+   distribución ni explotación del Software.
+
+3. ACTOS PROHIBIDOS
+
+   Salvo autorización previa, expresa y por escrito del Titular, queda
+   prohibido, total o parcialmente, por cualquier medio y con cualquier
+   finalidad:
+
+   a) copiar, reproducir, duplicar o almacenar el Software;
+   b) modificar, adaptar, traducir, transformar o crear obras derivadas del
+      Software;
+   c) distribuir, publicar, comunicar públicamente, poner a disposición,
+      sublicenciar, ceder, arrendar, prestar o vender el Software;
+   d) usar el Software con fines comerciales o lucrativos, incluida la
+      prestación de servicios a terceros basados en él;
+   e) descompilar, desensamblar o aplicar ingeniería inversa al Software,
+      salvo en la medida en que la ley aplicable lo permita de forma
+      imperativa;
+   f) usar el Software, o cualquier parte de él, para entrenar, ajustar o
+      evaluar modelos de inteligencia artificial o para alimentar
+      herramientas de generación automática de código;
+   g) eliminar, alterar u ocultar los avisos de derechos de autor, de
+      propiedad o de esta licencia.
+
+4. AUTORIZACIONES
+
+   Cualquier autorización para usar el Software solo es válida si consta en
+   un documento escrito y firmado por el Titular, que indique expresamente su
+   alcance, plazo, territorio y condiciones. Las autorizaciones son
+   personales, intransferibles y revocables, salvo que el documento diga
+   expresamente lo contrario. Las solicitudes de autorización deben dirigirse
+   al Titular a través de la cuenta de GitHub «Lab-Design-Code».
+
+5. ELEMENTOS DE TERCEROS
+
+   Las marcas, logotipos, nombres e imágenes de terceros que aparezcan en el
+   Software o que se usen con él —entre ellos los de instituciones de
+   educación y organismos de acreditación—, así como las fuentes
+   tipográficas, las bibliotecas de software, los programas y los servicios
+   de terceros (por ejemplo Python, Pillow, NumPy, OpenCV, fontTools,
+   python-docx, Inkscape, Adobe Firefly o Shutterstock), pertenecen a sus
+   respectivos titulares y se rigen por sus propias licencias y condiciones.
+   Esta licencia no reclama ningún derecho sobre ellos ni concede derecho
+   alguno a su respecto.
+
+6. EXCLUSIÓN DE GARANTÍAS Y LIMITACIÓN DE RESPONSABILIDAD
+
+   Cualquier uso autorizado del Software se hace «TAL CUAL», sin garantía de
+   ningún tipo, expresa o implícita, incluidas las de comerciabilidad,
+   idoneidad para un fin determinado y no infracción. En la máxima medida
+   permitida por la ley, el Titular no responde de ningún daño directo,
+   indirecto, incidental, especial o consecuencial que se derive del uso o de
+   la imposibilidad de uso del Software.
+
+7. INFRACCIONES
+
+   Cualquier uso no autorizado del Software constituye una infracción de los
+   derechos del Titular y podrá dar lugar a las acciones civiles y penales
+   que correspondan, incluida la indemnización de los perjuicios causados.
+
+8. TÉRMINO
+
+   Toda autorización concedida termina de forma automática e inmediata si se
+   incumple cualquiera de sus condiciones o de esta licencia. Al terminar, el
+   usuario debe dejar de usar el Software y destruir todas las copias que
+   tenga en su poder.
+
+9. LEY APLICABLE Y JURISDICCIÓN
+
+   Esta licencia se rige por las leyes de la República de Chile. Cualquier
+   controversia relativa a ella o al Software se someterá a los tribunales
+   ordinarios de justicia de la República de Chile.
+
+10. IDIOMA
+
+   Esta licencia se otorga en español y en inglés. En caso de discrepancia
+   entre ambas versiones, prevalece la versión en español.
+
+================================================================================
+ENGLISH
+================================================================================
+
+1. OWNERSHIP
+
+   This repository and all of its contents—including source and object code,
+   scripts, templates, data structures and files, documentation, workflows,
+   instructions for artificial intelligence agents, and any derivative works
+   thereof (the "Software")—are the work of Ariel Garay Pavez (the "Owner"),
+   who is the sole owner of all intellectual property rights in the Software.
+
+   The Software is protected by Chilean Law No. 17,336 on Intellectual
+   Property, the Berne Convention for the Protection of Literary and Artistic
+   Works, the TRIPS Agreement, and all other applicable national and
+   international laws.
+
+2. NO LICENSE
+
+   No license or right in the Software is granted, whether expressly, by
+   implication, by estoppel, or otherwise. Accessing, downloading, or viewing
+   the Software does not grant any right to use, exploit, or dispose of it.
+
+   If this repository is or has been publicly visible on GitHub, such
+   visibility does not constitute a license. The only rights that may exist
+   are the minimum rights imposed by GitHub's Terms of Service to view and
+   fork the repository within the GitHub platform, and they do not authorize
+   any use, copying outside GitHub, modification, distribution, or
+   exploitation of the Software.
+
+3. PROHIBITED ACTS
+
+   Unless the Owner gives prior, express, written authorization, it is
+   prohibited, in whole or in part, by any means and for any purpose:
+
+   a) to copy, reproduce, duplicate, or store the Software;
+   b) to modify, adapt, translate, transform, or create derivative works of
+      the Software;
+   c) to distribute, publish, communicate to the public, make available,
+      sublicense, assign, lease, lend, or sell the Software;
+   d) to use the Software for commercial or for-profit purposes, including
+      providing services to third parties based on it;
+   e) to decompile, disassemble, or reverse engineer the Software, except to
+      the extent that applicable law mandatorily permits it;
+   f) to use the Software, or any part of it, to train, fine-tune, or
+      evaluate artificial intelligence models or to feed automated code
+      generation tools;
+   g) to remove, alter, or obscure any copyright, proprietary, or license
+      notices.
+
+4. AUTHORIZATIONS
+
+   Any authorization to use the Software is valid only if it is set out in a
+   written document signed by the Owner that expressly states its scope,
+   term, territory, and conditions. Authorizations are personal,
+   non-transferable, and revocable, unless the document expressly states
+   otherwise. Requests for authorization must be addressed to the Owner
+   through the GitHub account "Lab-Design-Code".
+
+5. THIRD-PARTY ELEMENTS
+
+   Third-party trademarks, logos, names, and images that appear in or are
+   used with the Software—including those of educational institutions and
+   accreditation bodies—as well as third-party typefaces, software
+   libraries, programs, and services (for example Python, Pillow, NumPy,
+   OpenCV, fontTools, python-docx, Inkscape, Adobe Firefly, or Shutterstock)
+   belong to their respective owners and are governed by their own licenses
+   and terms. This license claims no rights in them and grants no rights with
+   respect to them.
+
+6. DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY
+
+   Any authorized use of the Software is provided "AS IS", without warranty
+   of any kind, express or implied, including the warranties of
+   merchantability, fitness for a particular purpose, and non-infringement.
+   To the maximum extent permitted by law, the Owner shall not be liable for
+   any direct, indirect, incidental, special, or consequential damages
+   arising from the use of, or inability to use, the Software.
+
+7. INFRINGEMENT
+
+   Any unauthorized use of the Software infringes the Owner's rights and may
+   give rise to the applicable civil and criminal actions, including
+   compensation for damages.
+
+8. TERMINATION
+
+   Any authorization granted terminates automatically and immediately if any
+   of its conditions or of this license is breached. Upon termination, the
+   user must stop using the Software and destroy all copies in their
+   possession.
+
+9. GOVERNING LAW AND JURISDICTION
+
+   This license is governed by the laws of the Republic of Chile. Any dispute
+   relating to it or to the Software shall be submitted to the ordinary
+   courts of justice of the Republic of Chile.
+
+10. LANGUAGE
+
+   This license is granted in Spanish and English. In the event of any
+   discrepancy between the two versions, the Spanish version prevails.
