@@ -61,3 +61,12 @@ desktop.ini
 ~$*
 .vscode/
 .idea/
+
+# Motor genérico (Motor/): proyectos (llevan beca, cuota y fotos), modelos y fuentes no se versionan
+Motor/proyectos/*
+!Motor/proyectos/LEEME.md
+Motor/fuentes/*
+!Motor/fuentes/LEEME.md
+Motor/modelos/*
+!Motor/modelos/LEEME.md
+Motor/salida/

@@ -1,0 +1,28 @@
+# Motor de graficas -- dependencias
+#
+#   pip install -r requirements.txt
+#
+# Obligatorias
+Pillow>=10.0
+fonttools>=4.40
+
+# Leer el Excel de datos en `graficas.py montar` (un .csv no lo necesita)
+openpyxl>=3.0
+
+# Deteccion automatica de rostro.
+#
+# OJO con la version: OpenCV 5 elimino CascadeClassifier de los bindings de
+# Python y solo deja YuNet, que necesita descargar un modelo .onnx. La serie 4
+# trae los clasificadores Haar DENTRO del paquete y funciona sin descargar
+# nada, que es lo que hace portable al motor.
+opencv-python<5
+
+# Opcional: mejor deteccion. Requiere dejar el modelo en modelos/.
+#   - modelos/face_detection_yunet_2023mar.onnx   (cualquier OpenCV con YuNet)
+#   - modelos/face_landmarker.task                (mediapipe; menton real)
+# mediapipe>=0.10
+
+# No se instala por pip: hace falta un rasterizador SVG -> PNG.
+#   resvg     https://github.com/linebender/resvg/releases   (recomendado)
+#   Inkscape  https://inkscape.org/release/
+# El motor lo busca solo; con `python graficas.py diagnostico` se ve cual encontro.

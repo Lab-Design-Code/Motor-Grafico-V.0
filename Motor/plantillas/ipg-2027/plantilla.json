@@ -1,0 +1,213 @@
+{
+  "nombre": "IPG Admision 2027",
+  "version": 1,
+
+  "_nota": [
+    "Este archivo es TODO el binding de la marca. No hay constantes en el codigo.",
+    "Casi nada de geometria aparece aca porque el motor la lee del propio SVG:",
+    "la posicion sale del transform del elemento, el cuerpo tipografico sale de",
+    "la regla CSS de su clase, y el ancho de las pastillas de sus atributos.",
+    "Solo se declara lo que el SVG no puede saber: que dato va en cada elemento,",
+    "con que fuente se mide, y las reglas de composicion."
+  ],
+
+  "campos": {
+    "prefijo": {"tipo": "texto",  "requerido": true, "ejemplo": "Tecnico de Nivel Superior en"},
+    "nombre":  {"tipo": "texto",  "requerido": true, "ejemplo": "ENFERMERIA"},
+    "badges":  {"tipo": "lista",  "max": 3,          "ejemplo": ["Titulo Tecnico"]},
+    "beca":    {"tipo": "numero", "requerido": true, "ejemplo": 0},
+    "cuota":   {"tipo": "numero", "requerido": true, "ejemplo": 0},
+    "sede":    {"tipo": "texto",  "requerido": true, "ejemplo": "Sede Arauco"}
+  },
+
+  "lectura": {
+    "_nota": [
+      "Como leer la planilla institucional de admision (la usa la plataforma, no el motor).",
+      "Calibrado con Meta IPG-2027: 'TECNICO DE NIVEL SUPERIOR EN ENFERMERIA' se parte en",
+      "prefijo + nombre, y 'PLAN CONTINUIDAD' pasa a ser badge. Las comparaciones no",
+      "distinguen tildes ni mayusculas."
+    ],
+    "excluir_filas_con": ["(NO VA)"],
+    "acentos": ["Informática Ingeniería Administración Educación Básica Gestión Logística Prevención",
+                "Automatización Técnico Psicopedagogía Podología Estética Enfermería Marítimo Marítima Pública",
+                "Programación Titulación Rehabilitación Instrumentación Ejecución Construcción Mecánica Química",
+                "Diseño Gráfico Producción Comunicación Audiovisual Electrónica Energía Ciberseguridad Concepción",
+                "Unión Parvularia Diferencial Contabilidad Auditoría Comercialización Teología Música Psicología"],
+    "sinonimos": {
+      "nombre": ["carrera", "programa"],
+      "beca":   ["descuento hasta", "descuento", "beca"],
+      "cuota":  ["cuota mensual", "cuota", "mensualidad"],
+      "sede":   ["sede", "campus"]
+    },
+    "formato": {
+      "nombre": {"mayusculas": true},
+      "sede":   {"titulo": true, "antes": "Sede ",
+                 "equivalencias": {"sede virtual": "Sede Online", "virtual": "Sede Online", "online": "Sede Online",
+                                   "a distancia": "Sede Online", "providencia": "Sede Online"}},
+      "beca":   {"porcentaje": true},
+      "cuota":  {"redondear_arriba": 10}
+    },
+    "derivar": {
+      "desde": "nombre",
+      "reglas": [
+        {"quitar_final": ["PLAN CONTINUIDAD", "PLAN DE CONTINUIDAD"], "badges": ["Plan Continuidad"]},
+        {"quitar_desde": ["CON DOBLE TITULACION", "(DOBLE TITULACION)", "DOBLE TITULACION"], "badges": ["Doble Titulación"], "reemplaza_badges": true},
+        {"empieza": ["TECNICO DE NIVEL SUPERIOR EN"], "prefijo": "Técnico de Nivel Superior en", "badges": ["Título Técnico"]},
+        {"empieza": ["INGENIERIA DE EJECUCION EN"], "prefijo": "Ingeniería de Ejecución en", "badges": ["Título Profesional"]},
+        {"empieza": ["INGENIERIA EN"], "prefijo": "Ingeniería en", "badges": ["Título Profesional"]},
+        {"empieza": ["TECNICO EN"], "prefijo": "Técnico en", "badges": ["Título Técnico"]},
+        {"si_no": true, "prefijo": "Carrera Profesional de", "badges": ["Título Profesional"]}
+      ]
+    }
+  },
+
+  "formatos": {
+    "post": {
+      "archivo": "post.svg",
+      "ancho": 1080,
+      "alto": 1080,
+
+      "elementos": [
+        {
+          "id": "m-prefijo", "tipo": "texto", "campo": "prefijo",
+          "fuente": "Montserrat-Black",
+          "pastilla": {"id": "m-subrayado", "pad": 22.0}
+        },
+        {
+          "id": "m-nombre", "tipo": "titulo", "campo": "nombre",
+          "fuente": "Montserrat-Black",
+          "max_ancho": 1011.0, "min_escala": 0.82,
+          "interlinea": 1.08, "max_lineas": 2,
+          "arrastra": ["m-prefijo", "m-subrayado"]
+        },
+        {
+          "tipo": "repetido", "campo": "badges",
+          "fuente": "Montserrat-Black",
+          "slots": [
+            {"texto_id": "m-badge-1", "rect_id": "m-badge-rect-1"},
+            {"texto_id": "m-badge-2", "rect_id": "m-badge-rect-2"},
+            {"texto_id": "m-badge-3", "rect_id": "m-badge-rect-3"}
+          ]
+        },
+        {
+          "id": "m-beca", "tipo": "texto", "plantilla": "DE HASTA {beca}%",
+          "fuente": "Montserrat-Black"
+        },
+        {
+          "id": "m-cuota", "tipo": "centrado", "plantilla": "${cuota:miles}",
+          "fuente": "Montserrat-Black",
+          "caja": [634.27, 991.74], "margen": 40.0
+        },
+        {
+          "id": "m-sede", "tipo": "texto", "campo": "sede",
+          "fuente": "Montserrat-Medium",
+          "pastilla": {"id": "m-sede-pastilla", "pad": 10.4}
+        }
+      ],
+
+      "foto": {
+        "capa_id": "m-capa-foto",
+        "quitar": ["m-plancha"],
+        "degradados": [
+          {
+            "_nota": "oscurece la franja del logo para que se lea sobre cualquier foto",
+            "rect": [0, 0, 1080, 230],
+            "gradiente": {"id": "GradLogoPost", "y0": 0, "y1": 230,
+                          "stops": [[0, "#000", 0.38], [1, "#000", 0]]}
+          },
+          {
+            "_nota": "degradado del pie: viene definido en el arte original",
+            "rect": [-2.21, 404.88, 1122.98, 928.53],
+            "ref": "Degradado_sin_nombre_15-2"
+          }
+        ]
+      },
+
+      "zonas": {
+        "logo": [20, 20, 700, 185],
+        "texto_y": 440,
+        "rostros": [200, 430],
+        "silueta": [600, 960],
+        "pelo_min": 205,
+        "titulo": 465,
+        "aire": {"1": 70, "2": 50},
+        "ancla": 1,
+        "bloque_titulo": ["m-prefijo", "m-nombre"]
+      }
+    },
+
+    "story": {
+      "archivo": "story.svg",
+      "ancho": 1080,
+      "alto": 1920,
+
+      "elementos": [
+        {
+          "id": "m-prefijo", "tipo": "texto", "campo": "prefijo",
+          "fuente": "Montserrat-Black",
+          "pastilla": {"id": "m-subrayado", "pad": 25.0}
+        },
+        {
+          "id": "m-nombre", "tipo": "titulo", "campo": "nombre",
+          "fuente": "Montserrat-Black",
+          "max_ancho": 968.0, "min_escala": 0.82,
+          "interlinea": 1.08, "max_lineas": 2,
+          "arrastra": ["m-prefijo", "m-subrayado"]
+        },
+        {
+          "tipo": "repetido", "campo": "badges",
+          "fuente": "Montserrat-Black",
+          "slots": [
+            {"texto_id": "m-badge-1", "rect_id": "m-badge-rect-1"},
+            {"texto_id": "m-badge-2", "rect_id": "m-badge-rect-2"},
+            {"texto_id": "m-badge-3", "rect_id": "m-badge-rect-3"}
+          ]
+        },
+        {
+          "id": "m-beca", "tipo": "texto", "plantilla": "DE HASTA {beca}%",
+          "fuente": "Montserrat-Black"
+        },
+        {
+          "id": "m-cuota", "tipo": "centrado", "plantilla": "${cuota:miles}",
+          "fuente": "Montserrat-Black",
+          "caja": [618.48, 1014.59], "margen": 40.0
+        },
+        {
+          "id": "m-sede", "tipo": "texto", "campo": "sede",
+          "fuente": "Montserrat-Medium",
+          "pastilla": {"id": "m-sede-pastilla", "pad": 13.0}
+        }
+      ],
+
+      "foto": {
+        "capa_id": "m-capa-foto",
+        "quitar": ["m-plancha"],
+        "degradados": [
+          {
+            "rect": [0, 0, 1080, 280],
+            "gradiente": {"id": "GradLogoStory", "y0": 0, "y1": 280,
+                          "stops": [[0, "#000", 0.38], [1, "#000", 0]]}
+          },
+          {
+            "_nota": "el Story no traia degradado de pie usable: se define aqui, calibrado para que la atenuacion sobre los badges sea equivalente a la del Post",
+            "rect": [0, 694, 1080, 1226],
+            "gradiente": {"id": "GradFotoStory", "y0": 694, "y1": 1800,
+                          "stops": [[0, "#000", 0], [1, "#000", 1]]}
+          }
+        ]
+      },
+
+      "zonas": {
+        "logo": [40, 70, 720, 240],
+        "texto_y": 740,
+        "rostros": [270, 700],
+        "silueta": [445, 1015],
+        "pelo_min": 300,
+        "titulo": 763,
+        "aire": {"1": 90, "2": 70},
+        "ancla": 0,
+        "bloque_titulo": ["m-prefijo", "m-nombre"]
+      }
+    }
+  }
+}

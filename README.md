@@ -31,6 +31,24 @@ Claude con el conector de Adobe (Firefly)
 
 Las instrucciones técnicas que sigue la IA están en [`INSTALAR.md`](INSTALAR.md).
 
+## Motor genérico (`Motor/`)
+
+La carpeta [`Motor/`](Motor/README.md) trae el **motor genérico**: la misma
+lógica de encuadre y QA, pero sin ninguna marca en el código. Cada marca se
+declara en `plantillas/<marca>/plantilla.json` y cada lote en un `proyecto.json`.
+Versión actual: **1.3.0**:
+
+- **Rostros de perfil:** si no hay cara de frente, la detección prueba de perfil.
+- **Datos vacíos:** un dato vacío se informa con un mensaje claro y el lote sigue.
+- **Relleno de bordes corregido:** en fotos chicas ya no borronea la cara. El
+  reflejo de Meta V.2 queda como opción.
+- **Fotos expandidas con Adobe Firefly:** el motor puede usar una foto ya
+  expandida con Firefly sin cambiar el encuadre.
+
+Detalle y verificación en
+[`Motor/actualizaciones del motor/`](Motor/actualizaciones%20del%20motor/LEEME.md).
+La interfaz web local no está incluida.
+
 ## Licencia · License
 
 **© 2026 Ariel Garay Pavez. Todos los derechos reservados.**
