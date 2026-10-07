@@ -1,4 +1,4 @@
-# Motor v1.1.0 — avance en vivo para la interfaz
+# Motor v1.1.0 — avance en vivo
 
 **Fecha:** 05-10-2026
 **Archivos tocados:** `motor/lote.py`, `motor/__init__.py` (versión 1.0.0 → 1.1.0)
@@ -7,7 +7,7 @@ línea de comandos (`graficas.py`) funciona igual que antes.
 
 ## Por qué
 
-La interfaz web necesita saber **qué pieza se está procesando y cómo salió**
+Quien corre un lote largo necesita saber **qué pieza se está procesando y cómo salió**
 mientras el lote corre. El motor solo lo imprimía en consola, y leer la consola
 para armar una barra de avance es frágil.
 
@@ -32,8 +32,8 @@ entregó los 4 eventos esperados, sin hallazgos de QA.
 
 ## Cómo revertir
 
-Copiar `antes/motor/*.py` sobre `Motor/motor/`. La interfaz web
-necesita esta versión: sin ella la generación funciona, pero sin avance en vivo.
+Copiar `antes/motor/*.py` sobre `Motor/motor/`. Sin esta versión
+la generación funciona igual, pero sin avance en vivo.
 
 ## Contenido de esta carpeta
 

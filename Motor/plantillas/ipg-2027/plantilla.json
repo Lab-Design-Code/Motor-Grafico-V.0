@@ -20,47 +20,6 @@
     "sede":    {"tipo": "texto",  "requerido": true, "ejemplo": "Sede Arauco"}
   },
 
-  "lectura": {
-    "_nota": [
-      "Como leer la planilla institucional de admision (la usa la plataforma, no el motor).",
-      "Calibrado con Meta IPG-2027: 'TECNICO DE NIVEL SUPERIOR EN ENFERMERIA' se parte en",
-      "prefijo + nombre, y 'PLAN CONTINUIDAD' pasa a ser badge. Las comparaciones no",
-      "distinguen tildes ni mayusculas."
-    ],
-    "excluir_filas_con": ["(NO VA)"],
-    "acentos": ["Informática Ingeniería Administración Educación Básica Gestión Logística Prevención",
-                "Automatización Técnico Psicopedagogía Podología Estética Enfermería Marítimo Marítima Pública",
-                "Programación Titulación Rehabilitación Instrumentación Ejecución Construcción Mecánica Química",
-                "Diseño Gráfico Producción Comunicación Audiovisual Electrónica Energía Ciberseguridad Concepción",
-                "Unión Parvularia Diferencial Contabilidad Auditoría Comercialización Teología Música Psicología"],
-    "sinonimos": {
-      "nombre": ["carrera", "programa"],
-      "beca":   ["descuento hasta", "descuento", "beca"],
-      "cuota":  ["cuota mensual", "cuota", "mensualidad"],
-      "sede":   ["sede", "campus"]
-    },
-    "formato": {
-      "nombre": {"mayusculas": true},
-      "sede":   {"titulo": true, "antes": "Sede ",
-                 "equivalencias": {"sede virtual": "Sede Online", "virtual": "Sede Online", "online": "Sede Online",
-                                   "a distancia": "Sede Online", "providencia": "Sede Online"}},
-      "beca":   {"porcentaje": true},
-      "cuota":  {"redondear_arriba": 10}
-    },
-    "derivar": {
-      "desde": "nombre",
-      "reglas": [
-        {"quitar_final": ["PLAN CONTINUIDAD", "PLAN DE CONTINUIDAD"], "badges": ["Plan Continuidad"]},
-        {"quitar_desde": ["CON DOBLE TITULACION", "(DOBLE TITULACION)", "DOBLE TITULACION"], "badges": ["Doble Titulación"], "reemplaza_badges": true},
-        {"empieza": ["TECNICO DE NIVEL SUPERIOR EN"], "prefijo": "Técnico de Nivel Superior en", "badges": ["Título Técnico"]},
-        {"empieza": ["INGENIERIA DE EJECUCION EN"], "prefijo": "Ingeniería de Ejecución en", "badges": ["Título Profesional"]},
-        {"empieza": ["INGENIERIA EN"], "prefijo": "Ingeniería en", "badges": ["Título Profesional"]},
-        {"empieza": ["TECNICO EN"], "prefijo": "Técnico en", "badges": ["Título Técnico"]},
-        {"si_no": true, "prefijo": "Carrera Profesional de", "badges": ["Título Profesional"]}
-      ]
-    }
-  },
-
   "formatos": {
     "post": {
       "archivo": "post.svg",
