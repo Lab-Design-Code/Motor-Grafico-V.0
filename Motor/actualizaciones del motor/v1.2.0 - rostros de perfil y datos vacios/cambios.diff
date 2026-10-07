@@ -1,0 +1,165 @@
+--- a/motor/rostro.py
++++ b/motor/rostro.py
+@@ -167,12 +167,23 @@
+     gris = cv2.equalizeHist(cv2.cvtColor(arr, cv2.COLOR_RGB2GRAY))
+     cascada = cv2.CascadeClassifier(
+         os.path.join(cv2.data.haarcascades, "haarcascade_frontalface_default.xml"))
+-    cajas = cascada.detectMultiScale(gris, scaleFactor=1.08, minNeighbors=6,
+-                                     minSize=(60, 60))
+-    if len(cajas) == 0:
+-        raise SinRostro("Haar no detecto rostros frontales")
++    cajas = [tuple(int(v) for v in c) for c in
++             cascada.detectMultiScale(gris, scaleFactor=1.08, minNeighbors=6, minSize=(60, 60))]
++    if not cajas:
++        # Rostro de 3/4 o de perfil. La cascada de perfil solo reconoce caras que
++        # miran hacia un lado; se prueba tambien la imagen reflejada para el otro.
++        perfil = cv2.CascadeClassifier(
++            os.path.join(cv2.data.haarcascades, "haarcascade_profileface.xml"))
++        ancho = gris.shape[1]
++        cajas = [tuple(int(v) for v in c) for c in
++                 perfil.detectMultiScale(gris, scaleFactor=1.08, minNeighbors=5, minSize=(60, 60))]
++        espejo = perfil.detectMultiScale(cv2.flip(gris, 1), scaleFactor=1.08, minNeighbors=5,
++                                         minSize=(60, 60))
++        cajas += [(ancho - int(x) - int(w), int(y), int(w), int(h)) for x, y, w, h in espejo]
++    if not cajas:
++        raise SinRostro("Haar no detecto rostros (ni de frente ni de perfil)")
+ 
+-    x, y, w, h = _elegir([tuple(int(v) for v in c) for c in cajas], sujeto)
++    x, y, w, h = _elegir(cajas, sujeto)
+     # La caja de Haar arranca sobre las cejas y termina cerca del menton.
+     return {"x": x, "y": y, "w": w, "h": h, "frente": y,
+             "menton": y + h, "centro": x + w / 2.0}, "haar"
+--- a/motor/plantilla.py
++++ b/motor/plantilla.py
+@@ -55,6 +55,9 @@
+                 "El dato '%s' no esta en esta fila (la plantilla lo pide en \"%s\")"
+                 % (nombre, patron))
+         valor = campos[nombre]
++        if valor is None or (isinstance(valor, str) and not valor.strip()):
++            raise KeyError("El dato '%s' esta vacio (la plantilla lo pide en \"%s\")"
++                           % (nombre, patron))
+         if filtro:
+             if filtro not in FILTROS:
+                 raise KeyError("Filtro desconocido '%s'. Disponibles: %s"
+--- a/motor/lote.py
++++ b/motor/lote.py
+@@ -288,55 +288,64 @@
+                       "verificacion": verificacion, "hechas": i, "total": total})
+ 
+     for i, pieza in enumerate(elegidas, 1):
+-        ruta = proyecto.ruta_foto(pieza)
+-        if not os.path.exists(ruta):
+-            print("!!  %-34s foto no encontrada: %s" % (pieza["slug"], ruta))
+-            fallidas += 1
+-            avisar(i, pieza, False, ["foto no encontrada: %s" % os.path.basename(ruta)])
+-            continue
+-
+-        medidas = pieza.get("medidas")
+-        if medidas is None or sobrescribir:
+-            try:
+-                medidas = rostro.medir(ruta, sujeto=pieza.get("sujeto", "mayor"),
+-                                       pelo_factor=pieza.get("pelo_factor"))
+-            except rostro.SinRostro as e:
+-                print("!!  %-34s %s" % (pieza["slug"], str(e).splitlines()[0]))
++        try:
++            ruta = proyecto.ruta_foto(pieza)
++            if not os.path.exists(ruta):
++                print("!!  %-34s foto no encontrada: %s" % (pieza["slug"], ruta))
+                 fallidas += 1
+-                avisar(i, pieza, False, [str(e).splitlines()[0]])
++                avisar(i, pieza, False, ["foto no encontrada: %s" % os.path.basename(ruta)])
+                 continue
+-            pieza["medidas"] = medidas
+ 
+-        destino = None
+-        if dir_verificacion:
+-            destino = os.path.join(dir_verificacion, pieza["slug"] + ".jpg")
+-            rostro.verificacion(ruta, medidas, destino)
++            medidas = pieza.get("medidas")
++            if medidas is None or sobrescribir:
++                try:
++                    medidas = rostro.medir(ruta, sujeto=pieza.get("sujeto", "mayor"),
++                                           pelo_factor=pieza.get("pelo_factor"))
++                except rostro.SinRostro as e:
++                    print("!!  %-34s %s" % (pieza["slug"], str(e).splitlines()[0]))
++                    fallidas += 1
++                    avisar(i, pieza, False, [str(e).splitlines()[0]])
++                    continue
++                pieza["medidas"] = medidas
+ 
+-        encuadre = pieza.setdefault("encuadre", {})
+-        mensajes, ok = [], True
+-        for formato in formatos:
+-            titulo_y = zonas.titulo_de_pieza(formato, pieza["campos"])
+-            try:
+-                r = solver.resolver(medidas, formato.zonas,
+-                                    (formato.ancho, formato.alto), titulo_y)
+-            except solver.SinSolucion as e:
+-                print("!!  %-34s %-6s SIN SOLUCION\n%s"
+-                      % (pieza["slug"], formato.nombre, e))
+-                fallidas += 1
+-                ok = False
+-                mensajes.append("%s: SIN SOLUCION. %s" % (formato.nombre, e))
+-                continue
+-            encuadre[formato.nombre] = {
+-                "expansiones": {k: r[k] for k in ("lados", "arriba", "abajo") if r[k]},
+-                "focal": list(r["focal"]),
+-            }
+-            print("ok  %-34s %-6s lados %.2f arriba %.2f abajo %.2f -> pelo %4d menton %4d x %4d"
+-                  % (pieza["slug"], formato.nombre, r["lados"], r["arriba"],
+-                     r["abajo"], r["pelo"], r["menton"], r["cara_x"]))
+-            mensajes.append("%s: ok (escala %.3f)" % (formato.nombre, r["escala"]))
+-            resueltas += 1
+-        avisar(i, pieza, ok, mensajes, destino)
++            destino = None
++            if dir_verificacion:
++                destino = os.path.join(dir_verificacion, pieza["slug"] + ".jpg")
++                rostro.verificacion(ruta, medidas, destino)
++
++            encuadre = pieza.setdefault("encuadre", {})
++            mensajes, ok = [], True
++            for formato in formatos:
++                titulo_y = zonas.titulo_de_pieza(formato, pieza["campos"])
++                try:
++                    r = solver.resolver(medidas, formato.zonas,
++                                        (formato.ancho, formato.alto), titulo_y)
++                except solver.SinSolucion as e:
++                    print("!!  %-34s %-6s SIN SOLUCION\n%s"
++                          % (pieza["slug"], formato.nombre, e))
++                    fallidas += 1
++                    ok = False
++                    mensajes.append("%s: SIN SOLUCION. %s" % (formato.nombre, e))
++                    continue
++                encuadre[formato.nombre] = {
++                    "expansiones": {k: r[k] for k in ("lados", "arriba", "abajo") if r[k]},
++                    "focal": list(r["focal"]),
++                }
++                print("ok  %-34s %-6s lados %.2f arriba %.2f abajo %.2f -> pelo %4d menton %4d x %4d"
++                      % (pieza["slug"], formato.nombre, r["lados"], r["arriba"],
++                         r["abajo"], r["pelo"], r["menton"], r["cara_x"]))
++                mensajes.append("%s: ok (escala %.3f)" % (formato.nombre, r["escala"]))
++                resueltas += 1
++            avisar(i, pieza, ok, mensajes, destino)
+ 
++        except Exception as e:
++            # Sin progreso (consola) el error se ve completo; con progreso (interfaz)
++            # se informa la pieza y el lote sigue.
++            if not progreso:
++                raise
++            fallidas += 1
++            print("!!  %-34s %s: %s" % (pieza["slug"], type(e).__name__, e))
++            avisar(i, pieza, False, ["%s: %s" % (type(e).__name__, e)])
+     proyecto.guardar()
+     print("\n%d encuadres resueltos, %d sin resolver -> %s"
+           % (resueltas, fallidas, proyecto.ruta))
+--- a/motor/__init__.py
++++ b/motor/__init__.py
+@@ -4,7 +4,7 @@
+ Generico por diseno: el binding a una marca concreta vive en un plantilla.json,
+ no en el codigo. Ver README.md.
+ """
+-__version__ = "1.1.0"
++__version__ = "1.2.0"
+ 
+ from . import (entorno, foto, lote, plantilla, qa, render, rostro, solver,  # noqa: F401
+                svgdoc, texto, zonas)

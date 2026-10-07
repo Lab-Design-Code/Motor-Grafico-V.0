@@ -14,11 +14,13 @@ máquina o con otra persona, empieza acá.
 | [`Gráficas Meta 2027/LEEME.md`](Gráficas%20Meta%202027/LEEME.md) | qué hay en cada carpeta de entrega |
 | [`03-Fotografias/CALCE-Fotos-V3.md`](03-Fotografias/CALCE-Fotos-V3.md) | qué foto quedó en qué carrera |
 | [`02-Datos/perfiles-fotograficos.json`](02-Datos/perfiles-fotograficos.json) | el perfil fotográfico de cada carrera |
+| [`Motor/README.md`](Motor/README.md) | el motor genérico (v1.3.0), reutilizable con otras marcas |
+| [`Motor/actualizaciones del motor/`](Motor/actualizaciones%20del%20motor/LEEME.md) | qué cambió en cada versión del motor genérico |
 
 > **Ámbito.** Este proyecto es **la campaña IPG 2027**. El motor genérico —la
-> versión reutilizable con otras marcas— es un proyecto aparte, en
-> `..\..\Personal\Motor-Graficas\`, con documentación propia. Los dos se
-> mantienen alineados pero no se mezclan.
+> versión reutilizable con otras marcas— vive en la carpeta [`Motor/`](Motor/README.md),
+> con documentación propia y su registro de versiones. Los dos se mantienen
+> alineados pero no se mezclan: los scripts de esta campaña no importan `Motor/`.
 
 ---
 
@@ -341,6 +343,7 @@ Meta IPG-2027/
   06-Documentacion/    el manual .docx
   Gráficas Meta 2027/  entregables · una carpeta por versión
   Zonas seguras/       mapas de zonas
+  Motor/               motor genérico v1.3.0 (otras marcas) · ver Motor/README.md
 ```
 
 **`02-Datos/escuela-*.json` es la única fuente de verdad de cada lote:** texto,

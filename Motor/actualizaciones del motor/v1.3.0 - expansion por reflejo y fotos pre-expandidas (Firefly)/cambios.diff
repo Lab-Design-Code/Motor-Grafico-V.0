@@ -1,0 +1,239 @@
+--- antes/motor/foto.py	2026-10-05 22:52:39.826667800 -0300
++++ despues/motor/foto.py	2026-10-05 23:02:58.321116100 -0300
+@@ -33,12 +33,23 @@
+     return tira.filter(ImageFilter.GaussianBlur(radius=radio))
+ 
+ 
++def _tira(lado):
++    """Alto (o ancho) de la tira de borde que se estira y se difumina.
++
++    Era max(60, 1%): en una foto de 700 px eso es una costura difuminada de 180 px
++    (el 26%) que caia sobre la cara si la cabeza estaba cerca del borde. Desde
++    v1.3.0 la tira no pasa del 3% del lado. En fotos de 2000 px o mas -- todas las
++    de IPG -- el valor es el mismo de antes, asi que esas piezas no cambian.
++    """
++    return max(int(lado * 0.01), min(60, int(lado * 0.03)), 2)
++
++
+ def expandir_arriba(entrada, salida, frac=0.15):
+     """Agrega cielo/fondo sobre la cabeza estirando el borde superior."""
+     im = Image.open(entrada).convert("RGB")
+     nw, nh = im.size
+     extra = int(nh * frac)
+-    alto_tira = max(60, int(nh * 0.01))
++    alto_tira = _tira(nh)
+     tira = _difuminar_tira(im.crop((0, 0, nw, alto_tira)).resize((nw, extra), Image.LANCZOS))
+     nuevo = Image.new("RGB", (nw, nh + extra))
+     nuevo.paste(tira, (0, 0))
+@@ -60,7 +71,7 @@
+     im = Image.open(entrada).convert("RGB")
+     nw, nh = im.size
+     extra = int(nh * frac)
+-    alto_tira = max(60, int(nh * 0.01))
++    alto_tira = _tira(nh)
+     tira = _difuminar_tira(
+         im.crop((0, nh - alto_tira, nw, nh)).resize((nw, extra), Image.LANCZOS))
+     nuevo = Image.new("RGB", (nw, nh + extra))
+@@ -82,7 +93,7 @@
+     im = Image.open(entrada).convert("RGB")
+     nw, nh = im.size
+     extra = int(nw * frac / 2)
+-    ancho_tira = max(60, int(nw * 0.01))
++    ancho_tira = _tira(nw)
+     izq = _difuminar_tira(im.crop((0, 0, ancho_tira, nh)).resize((extra, nh), Image.LANCZOS))
+     der = _difuminar_tira(
+         im.crop((nw - ancho_tira, 0, nw, nh)).resize((extra, nh), Image.LANCZOS))
+@@ -97,34 +108,139 @@
+     nuevo.save(salida, quality=93)
+ 
+ 
++# ------------------------------------------------- expansion por reflejo (v1.3.0)
++# Traida de Meta IPG-2027 (capa_fotos_ipg.py, 22-09-2026). El estirado de arriba
++# borroneaba una franja fija de ~180 px del borde, y en una foto chica o con la
++# cabeza cerca del borde eso caia sobre la cara. Aca se refleja solo una BANDA
++# del borde (el 22% exterior, que en una foto bien elegida es fondo) y encima va
++# una rampa de suavizado: nitido en la costura, cada vez mas blando hacia afuera.
++# La foto original queda intacta: nada se pega encima de ella.
++# La aritmetica de tamanos es la misma que la del estirado (int() incluidos), asi
++# que el solver y los encuadres ya resueltos siguen valiendo.
++_BANDA = 0.22        # fraccion del borde que se toma como material
++_RAMPA = 0.22        # a que fraccion de la zona nueva el suavizado es total
++_REDUCCION = 14      # cuanto se achica para generar la capa blanda
++_RADIO = 7           # desenfoque sobre esa miniatura
++
++
++def _capa_blanda(banda):
++    """Version desenfocada por reduccion y reescalado (un GaussianBlur grande sobre 40 MP es inviable)."""
++    w, h = banda.size
++    chica = banda.resize((max(1, w // _REDUCCION), max(1, h // _REDUCCION)), Image.LANCZOS)
++    chica = chica.filter(ImageFilter.GaussianBlur(radius=_RADIO))
++    return chica.resize((w, h), Image.BILINEAR)
++
++
++def _suavizar_hacia_afuera(ext, eje, inicio):
++    import numpy as np
++    n = ext.shape[eje]
++    if n == 0:
++        return ext
++    blanda = np.asarray(_capa_blanda(Image.fromarray(ext)))
++    d = np.arange(n, dtype=np.float32)
++    if inicio:  # la costura esta al final de la extension
++        d = n - 1 - d
++    t = np.clip(d / max(1.0, n * _RAMPA), 0.0, 1.0)
++    otro = ext.shape[1 - eje]
++    for i in range(0, otro, 512):  # por tramos: no levantar un float32 del tamano entero
++        j = min(i + 512, otro)
++        if eje == 1:
++            tr = t[None, :, None]
++            ext[i:j] = (ext[i:j].astype(np.float32) * (1 - tr) + blanda[i:j].astype(np.float32) * tr).astype(np.uint8)
++        else:
++            tr = t[:, None, None]
++            ext[:, i:j] = (ext[:, i:j].astype(np.float32) * (1 - tr)
++                           + blanda[:, i:j].astype(np.float32) * tr).astype(np.uint8)
++    return ext
++
++
++def _continuar(a, n, eje, inicio):
++    """n pixeles de continuacion del borde reflejando la banda exterior (mode=reflect no repite el borde)."""
++    import numpy as np
++    lado = a.shape[eje]
++    b = max(2, min(lado, int(lado * _BANDA)))
++    if eje == 1:
++        banda = a[:, :b] if inicio else a[:, lado - b:]
++        ancho = ((0, 0), (n, 0) if inicio else (0, n), (0, 0))
++    else:
++        banda = a[:b] if inicio else a[lado - b:]
++        ancho = ((n, 0) if inicio else (0, n), (0, 0), (0, 0))
++    ext = np.pad(banda, ancho, mode="reflect")
++    ext = ext[:, :n] if eje == 1 and inicio else ext[:, b:] if eje == 1 else ext[:n] if inicio else ext[b:]
++    return _suavizar_hacia_afuera(np.ascontiguousarray(ext), eje, inicio)
++
++
++def _crecer(entrada, salida, izq, der, arriba, abajo):
++    import numpy as np
++    a = np.asarray(Image.open(entrada).convert("RGB"))
++    for antes, despues, eje in ((izq, der, 1), (arriba, abajo, 0)):
++        if not (antes or despues):
++            continue
++        partes = []
++        if antes:
++            partes.append(_continuar(a, antes, eje, True))
++        partes.append(a)
++        if despues:
++            partes.append(_continuar(a, despues, eje, False))
++        a = np.concatenate(partes, axis=eje)
++    Image.fromarray(a).save(salida, quality=93)
++
++
++def reflejar_arriba(entrada, salida, frac=0.15):
++    nh = Image.open(entrada).size[1]
++    _crecer(entrada, salida, 0, 0, int(nh * frac), 0)
++
++
++def reflejar_abajo(entrada, salida, frac=0.05):
++    nh = Image.open(entrada).size[1]
++    _crecer(entrada, salida, 0, 0, 0, int(nh * frac))
++
++
++def reflejar_lados(entrada, salida, frac=0.4):
++    nw = Image.open(entrada).size[0]
++    extra = int(nw * frac / 2)
++    _crecer(entrada, salida, extra, extra, 0, 0)
++
++
+ # (clave, funcion, sigla para el cache). Las siglas son explicitas y no la
+ # inicial de la clave: "arriba" y "abajo" empiezan igual, y dos expansiones
+ # distintas con el mismo valor terminarian compartiendo archivo de cache.
+ CADENA = (("lados", expandir_lados, "lat"),
+           ("arriba", expandir_arriba, "sup"),
+           ("abajo", expandir_abajo, "inf"))
++CADENA_REFLEJO = (("lados", reflejar_lados, "lat"),
++                  ("arriba", reflejar_arriba, "sup"),
++                  ("abajo", reflejar_abajo, "inf"))
++
++# "estirado" (por omision: las piezas ya aprobadas salen identicas) o "reflejo" (Meta V.2).
++# Una campana lo elige con "expansion" en proyecto.json.
++METODO = os.environ.get("MG_EXPANSION", "estirado")
+ 
+ 
+-def preparar(ruta, expansiones, cache):
++def preparar(ruta, expansiones, cache, metodo=None):
+     """Devuelve la ruta de la foto expandida, generandola si hace falta.
+ 
+     El nombre del cache codifica los parametros, de modo que cambiar un
+     encuadre no invalida los demas y volver a un valor anterior no recalcula.
++    El reflejo lleva el sufijo "-r": un cache del estirado nunca se reutiliza.
+     """
+     activas = {k: v for k, v in (expansiones or {}).items() if v}
+     if not activas:
+         return ruta
++    metodo = metodo or METODO
++    cadena = CADENA if metodo == "estirado" else CADENA_REFLEJO
+ 
+     base, ext = os.path.splitext(os.path.basename(ruta))
+     etiqueta = base + "".join("-%s%s" % (sigla, activas[k])
+-                              for k, _, sigla in CADENA if activas.get(k)) + ext
++                              for k, _, sigla in cadena if activas.get(k)) \
++        + ("" if metodo == "estirado" else "-r") + ext
+     destino = os.path.join(cache, etiqueta)
+     if os.path.exists(destino):
+         return destino
+     os.makedirs(cache, exist_ok=True)
+ 
+     paso, temporales = ruta, []
+-    for clave, fn, _ in CADENA:
++    for clave, fn, _ in cadena:
+         frac = activas.get(clave)
+         if not frac:
+             continue
+--- antes/motor/lote.py	2026-10-05 22:52:39.849509600 -0300
++++ despues/motor/lote.py	2026-10-05 23:02:58.348965000 -0300
+@@ -100,6 +100,26 @@
+ 
+ # --------------------------------------------------------------- generacion
+ 
++def _pre_expandida(proyecto, pieza, formato, enc):
++    """Foto ya expandida por fuera del motor (Adobe Firefly), si calza con este encuadre.
++
++    pieza["expandidas"][formato] = {"archivo": ruta relativa a fotos/, "expansiones": {...}}.
++    Solo se usa si las expansiones son EXACTAMENTE las del encuadre vigente: la foto
++    expandida trae esas proporciones, y por eso el mismo `focal` del solver sigue
++    valiendo (como en Meta IPG-2027, generar_v3.py). Si el encuadre cambio, se ignora
++    y se vuelve a la expansion propia del motor.
++    """
++    pre = (pieza.get("expandidas") or {}).get(formato.nombre)
++    if not pre or not pre.get("archivo"):
++        return None
++    pedidas = {k: v for k, v in (enc.get("expansiones") or {}).items() if v}
++    hechas = {k: v for k, v in (pre.get("expansiones") or {}).items() if v}
++    if pedidas != hechas:
++        return None
++    ruta = proyecto.ruta_foto({"foto": pre["archivo"]})
++    return ruta if ruta and os.path.isfile(ruta) else None
++
++
+ def construir_pieza(proyecto, formato, pieza, encuadre=None, con_zonas=False):
+     """Devuelve el SVG de una pieza, con foto si la tiene."""
+     svg = formato.construir(pieza["campos"])
+@@ -108,7 +128,9 @@
+     if ruta:
+         enc = encuadre if encuadre is not None else \
+             (pieza.get("encuadre") or {}).get(formato.nombre, {})
+-        expandida = _foto.preparar(ruta, enc.get("expansiones"), proyecto.cache_fotos)
++        expandida = _pre_expandida(proyecto, pieza, formato, enc) or \
++            _foto.preparar(ruta, enc.get("expansiones"), proyecto.cache_fotos,
++                           metodo=proyecto.cfg.get("expansion"))
+         cfg = dict(formato.foto)
+         cfg["_canvas"] = (formato.ancho, formato.alto)
+         focal = tuple(enc.get("focal") or (0.5, 0.38, 0.5, 0.33))
+--- antes/motor/__init__.py	2026-10-05 22:52:39.863692400 -0300
++++ despues/motor/__init__.py	2026-10-05 23:02:58.371392500 -0300
+@@ -4,7 +4,7 @@
+ Generico por diseno: el binding a una marca concreta vive en un plantilla.json,
+ no en el codigo. Ver README.md.
+ """
+-__version__ = "1.2.0"
++__version__ = "1.3.0"
+ 
+ from . import (entorno, foto, lote, plantilla, qa, render, rostro, solver,  # noqa: F401
+                svgdoc, texto, zonas)

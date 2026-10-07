@@ -1,0 +1,54 @@
+[
+  {
+    "_comentario": "Post 1080x1080. Traduce los selectores por clase CSS de la exportacion de Illustrator a ids estables. Se corre UNA vez; despues el motor ya no mira clases.",
+    "origen": "../../../Meta IPG-2027/01-Plantillas/Post-IPG 2027-Plantilla.svg",
+    "destino": "post.svg",
+    "marcas": [
+      {"id": "m-prefijo",      "buscar": {"tag": "text", "clase": "cls-10", "transform": "34.22 506.81"}},
+      {"id": "m-nombre",       "buscar": {"tag": "text", "clase": "cls-14", "transform": "34.22 585.03"}},
+      {"id": "m-subrayado",    "buscar": {"tag": "rect", "clase": "cls-11", "attrs": {"x": "-104.17", "y": "511.05"}}},
+
+      {"id": "m-badge-1",      "buscar": {"tag": "text", "clase": "cls-13", "transform": "50.01 636.31"}},
+      {"id": "m-badge-2",      "buscar": {"tag": "text", "clase": "cls-13", "transform": "300.86 636.31"}},
+      {"id": "m-badge-3",      "buscar": {"tag": "text", "clase": "cls-13", "transform": "569.33 637.18"}},
+      {"id": "m-badge-rect-1", "buscar": {"tag": "rect", "clase": "cls-2", "attrs": {"x": "34.22", "y": "608.09"}}},
+      {"id": "m-badge-rect-2", "buscar": {"tag": "rect", "clase": "cls-2", "attrs": {"x": "283.25", "y": "608.09"}}},
+      {"id": "m-badge-rect-3", "buscar": {"tag": "rect", "clase": "cls-2", "attrs": {"x": "532.28", "y": "608.09"}}},
+
+      {"id": "m-beca",         "buscar": {"tag": "text", "clase": "cls-4", "transform": "114.22 801.4"}},
+      {"id": "m-cuota",        "buscar": {"tag": "text", "clase": "cls-5", "transform": "673.41 819.12"}},
+      {"id": "m-sede",         "buscar": {"tag": "text", "clase": "cls-1", "transform": "106.0127 1048.5224"}},
+      {"id": "m-sede-pastilla","buscar": {"tag": "rect", "clase": "cls-11", "attrs": {"x": "57.15", "y": "1014.89"}}},
+
+      {"id": "m-plancha",      "buscar": {"tag": "rect", "clase": "cls-21", "attrs": {"x": "-13.01"}}},
+      {"id": "m-capa-foto",    "placeholder": true,
+       "buscar": {"regex": "<g class=\"cls-51\">.*?</g>\\s*</g>\\s*<rect class=\"cls-17\"[^>]*/>\\s*</g>"}}
+    ]
+  },
+  {
+    "_comentario": "Story 1080x1920. La capa de fotos original quedo fuera del lienzo (x ~ -1284) y es inservible: el placeholder la reemplaza por completo y el degradado se define de cero en plantilla.json.",
+    "origen": "../../../Meta IPG-2027/01-Plantillas/Story-IPG 2027-Plantilla.svg",
+    "destino": "story.svg",
+    "marcas": [
+      {"id": "m-prefijo",      "buscar": {"tag": "text", "clase": "cls-1", "transform": "55.86 811.86"}},
+      {"id": "m-nombre",       "buscar": {"tag": "text", "clase": "cls-3", "transform": "55.86 902.32"}},
+      {"id": "m-subrayado",    "buscar": {"tag": "rect", "clase": "cls-4", "attrs": {"x": "-104.17", "y": "816.76"}}},
+
+      {"id": "m-badge-1",      "buscar": {"tag": "text", "clase": "cls-6", "transform": "74.12 961.61"}},
+      {"id": "m-badge-2",      "buscar": {"tag": "text", "clase": "cls-6", "transform": "364.19 961.61"}},
+      {"id": "m-badge-3",      "buscar": {"tag": "text", "clase": "cls-6", "transform": "674.65 962.62"}},
+      {"id": "m-badge-rect-1", "buscar": {"tag": "rect", "clase": "cls-17", "attrs": {"x": "55.86", "y": "928.98"}}},
+      {"id": "m-badge-rect-2", "buscar": {"tag": "rect", "clase": "cls-17", "attrs": {"x": "343.84", "y": "928.98"}}},
+      {"id": "m-badge-rect-3", "buscar": {"tag": "rect", "clase": "cls-17", "attrs": {"x": "631.81", "y": "928.98"}}},
+
+      {"id": "m-beca",         "buscar": {"tag": "text", "clase": "cls-8", "transform": "94.1635 1185.2314"}},
+      {"id": "m-cuota",        "buscar": {"tag": "text", "clase": "cls-7", "transform": "661.8549 1204.8701"}},
+      {"id": "m-sede",         "buscar": {"tag": "text", "clase": "cls-10", "transform": "138.7395 1608.3502"}},
+      {"id": "m-sede-pastilla","buscar": {"tag": "rect", "clase": "cls-4", "attrs": {"x": "75.61", "y": "1564.9"}}},
+
+      {"id": "m-plancha",      "buscar": {"tag": "rect", "clase": "cls-23", "attrs": {"x": "-39.25"}}},
+      {"id": "m-capa-foto",    "placeholder": true,
+       "buscar": {"regex": "<g class=\"cls-47\">.*?</g>\\s*</g>\\s*</g>"}}
+    ]
+  }
+]
